@@ -1,0 +1,1841 @@
+<input type="radio" name="attr_menu" value="caracteristique" checked><p><img src="https://raw.githubusercontent.com/MiniSteff/Anima/master/img/carac.png"></p>
+<input type="radio" name="attr_menu" value="competence_secondaire"><p><img src="https://raw.githubusercontent.com/MiniSteff/Anima/master/img/comp.png"></p>
+<input type="radio" name="attr_menu" value="combat"><p><img src="https://raw.githubusercontent.com/MiniSteff/Anima/master/img/arme.png"></p>
+<input type="radio" name="attr_menu" value="ki"><p><img src="https://raw.githubusercontent.com/MiniSteff/Anima/master/img/ki.png"></p>
+<input type="radio" name="attr_menu" value="magie"><p><img src="https://raw.githubusercontent.com/MiniSteff/Anima/master/img/magic.png"></p>
+<input type="radio" name="attr_menu" value="psy"><p><img src="https://raw.githubusercontent.com/MiniSteff/Anima/master/img/psy.png"></p>
+<input type="radio" name="attr_menu" value="historique"><p><img src="https://raw.githubusercontent.com/MiniSteff/Anima/master/img/historique.png"></p>
+
+
+<div class="sheet-informations">
+    <p class="sheet-title1">Personnage</p>
+    <ul>
+        <li>Nom</li>
+        <li><input type="text" name="attr_nom" placeholder=".........."></li>
+        <li>Race</li>
+        <li><input type="text" name="attr_race" placeholder=".........."></li>
+    </ul>
+    <ul>
+        <li>Âge</li>
+        <li><input type="text" name="attr_age" placeholder=".........."></li>
+        <li>Genre</li>
+        <li><input type="text" name="attr_genre" placeholder=".........."></li>
+    </ul>
+    <ul>
+        <li>Origine</li>
+        <li><input type="text" name="attr_origine" placeholder=".........."></li>
+    </ul>
+    <ul>
+        <li>Classe</li>
+        <li><input type="text" name="attr_classe" placeholder=".........."></li>
+    </ul>
+    <ul>
+        <li>Cheveux</li>
+        <li><input type="text" name="attr_cheveux" placeholder=".........."></li>
+        <li>Yeux</li>
+        <li><input type="text" name="attr_yeux" placeholder=".........."></li>
+    </ul>
+    <ul>
+        <li>Taille</li>
+        <li><input type="text" name="attr_taille" placeholder=".........."></li>
+        <li>Poids</li>
+        <li><input type="text" name="attr_poids" placeholder=".........."></li>
+    </ul>
+</div>
+
+<div class="sheet-combat">
+    <p class="sheet-title1">Combat</p>
+    
+    <ul class="sheet-ul1">
+        <li>        </li>
+        <li>        </li>
+        <li>BASE    </li>
+        <li>BONUS   </li>
+        <li>CLASSE  </li>
+        <li>TOTAL   </li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value=""></button></li>
+        <li>Attaque</li>
+        <li><input type="number" name="attr_attaque_base"   value="0"></li>
+        <li><input type="number" name="attr_attaque_bonus" value="@{dexterite_mod}" disabled></li>
+        <li><input type="number" name="attr_attaque_classe" value="0"></li>
+        <li><input type="number" name="attr_attaque_total"  value="[[@{attaque_base}+@{dexterite_mod}+@{attaque_classe}]]" disabled></li>
+    </ul>
+    <ul class="sheet-ul2">
+        <li><button type="roll" value=""></button></li>
+        <li>Parade</li>
+        <li><input type="number" name="attr_parade_base"   value="0"></li>
+        <li><input type="number" name="attr_parade_bonus" value="@{dexterite_mod}" disabled></li>
+        <li><input type="number" name="attr_parade_classe" value="0"></li>
+        <li><input type="number" name="attr_parade_total"  value="[[@{parade_base}+@{dexterite_mod}+@{parade_classe}]]" disabled></li>
+    </ul>
+    <ul class="sheet-ul2">
+        <li><button type="roll" value=""></button></li>
+        <li>Esquive</li>
+        <li><input type="number" name="attr_esquive_base"   value="0"></li>
+        <li><input type="number" name="attr_esquive_bonus" value="@{agilite_mod}" disabled></li>
+        <li><input type="number" name="attr_esquive_classe" value="0"></li>
+        <li><input type="number" name="attr_esquive_total"  value="[[@{esquive_base}+@{agilite_mod}+@{esquive_classe}]]" disabled></li>
+    </ul><br>
+    
+    <p class="sheet-title1">Arme</p>
+    
+    <ul class="sheet-ul3">
+        <li></li>
+        <li>NOM</li>
+        <li>DÉGÂTS</li>
+        <li>VITESSE</li>
+        <li>FORCE R.</li>
+        <li>SOL.</li>
+        <li>FRAC.</li>
+        <li>PRÉS.</li>
+        <li>MODE 1</li>
+        <li>MODE 2</li>
+    </ul>
+    
+    <ul class="sheet-ul4">
+        <li><button type="roll" value=""></button></li>
+        <li><input type="text" name="attr_nom_arme" placeholder="....."></li>
+        <li><input type="number" name="attr_degats_arme" value="0"></li>
+        <li><input type="number" name="attr_vitesse_arme" value="0"></li>
+        <li><input type="text" name="attr_force_requise_arme" placeholder=" 0/0"></li>
+        <li><input type="number" name="attr_solidite_arme" value="0"></li>
+        <li><input type="number" name="attr_fracassement_arme" value="0"></li>
+        <li><input type="number" name="attr_presence_arme" value="0"></li>
+        <li><input type="text" name="attr_mode1_arme" placeholder="....."></li>
+        <li><input type="text" name="attr_mode2_arme" placeholder="....."></li>
+    </ul>
+    <ul class="sheet-ul5">
+        <li><input type="text" name="attr_categorie_arme" placeholder="Catégorie d'arme"></li>
+        <li><input type="text" name="attr_special_arme" placeholder="Spécial"></li>
+    </ul>
+    
+    <fieldset class="repeating_arme">
+        <ul class="sheet-ul4">
+            <li><button type="roll" value=""></button></li>
+            <li><input type="text" name="attr_nom_arme" placeholder="....."></li>
+            <li><input type="number" name="attr_degats_arme" value="0"></li>
+            <li><input type="number" name="attr_vitesse_arme" value="0"></li>
+            <li><input type="text" name="attr_force_requise_arme" placeholder=" 0/0"></li>
+            <li><input type="number" name="attr_solidite_arme" value="0"></li>
+            <li><input type="number" name="attr_fracassement_arme" value="0"></li>
+            <li><input type="number" name="attr_presence_arme" value="0"></li>
+            <li><input type="text" name="attr_mode1_arme" placeholder="....."></li>
+            <li><input type="text" name="attr_mode2_arme" placeholder="....."></li>
+        </ul>
+        <ul class="sheet-ul5">
+            <li><input type="text" name="attr_categorie_arme" placeholder="Catégorie d'arme"></li>
+            <li><input type="text" name="attr_special_arme" placeholder="Spécial"></li>
+        </ul><br>
+    </fieldset><br>
+    
+    <p class="sheet-title1">Armure</p>
+    
+        <ul class="sheet-ul6">
+            <li>NOM</li>
+            <li>TRA</li>
+            <li>CONT</li>
+            <li>PER</li>
+            <li>CHA</li>
+            <li>ÉLE</li>
+            <li>FRO</li>
+            <li>ÉNE</li>
+            <li>LOCALISATION</li>
+        </ul>
+        
+        <ul class="sheet-ul7">
+            <li><input type="text" name="attr_nom_armure" placeholder="....."></li>
+            <li><input type="number" name="attr_tra_armure" value="0"></li>
+            <li><input type="number" name="attr_cont_armure" value="0"></li>
+            <li><input type="number" name="attr_per_armure" value="0"></li>
+            <li><input type="number" name="attr_cha_armure" value="0"></li>
+            <li><input type="number" name="attr_ele_armure" value="0"></li>
+            <li><input type="number" name="attr_fro_armure" value="0"></li>
+            <li><input type="number" name="attr_ene_armure" value="0"></li>
+            <li><input type="text" name="attr_localisation_armure" placeholder="....."></li>
+        </ul>
+        
+    <fieldset class="repeating_armure">
+        <ul class="sheet-ul7">
+            <li><input type="text" name="attr_nom_armure" placeholder="....."></li>
+            <li><input type="number" name="attr_tra_armure" value="0"></li>
+            <li><input type="number" name="attr_cont_armure" value="0"></li>
+            <li><input type="number" name="attr_per_armure" value="0"></li>
+            <li><input type="number" name="attr_cha_armure" value="0"></li>
+            <li><input type="number" name="attr_ele_armure" value="0"></li>
+            <li><input type="number" name="attr_fro_armure" value="0"></li>
+            <li><input type="number" name="attr_ene_armure" value="0"></li>
+            <li><input type="text" name="attr_localisation_armure" placeholder="....."></li>
+        </ul>
+    </fieldset><br>
+    
+    <p class="sheet-title1">Équipements</p>
+    <ul>
+        <li>PO :<input type="number" name="attr_po" value="0"></li>
+        <li>PA :<input type="number" name="attr_pa" value="0"></li>
+        <li>PC :<input type="number" name="attr_pc" value="0"></li>
+    </ul>
+    <ul class="sheet-ul8">
+            <li>NOM</li>
+            <li>COÛT</li>
+            <li>DESCRIPTION</li>
+        </ul>
+        
+    <fieldset class="repeating_equipement">
+        <ul class="sheet-ul9">
+            <li><input type="text" name="attr_nom_equipement" placeholder="....."></li>
+            <li><input type="text" name="attr_cout_equipement" placeholder="..PO"></li>
+            <li><input type="text" name="attr_description_equipement" placeholder="....."></li>
+        </ul>
+    </fieldset><br>
+    
+</div>
+
+<div class="sheet-psy">
+    <p class="sheet-title1">Psychique</p>
+    
+    <ul class="sheet-ul1">
+        <li>            </li>
+        <li>BASE        </li>
+        <li>MULTI.      </li>
+        <li>TOTAL       </li>
+        <li>PPP LIBRE   </li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li>PPP</li>
+        <li><input type="number" name="attr_ppp_actuel" value="0"></li>
+        <li><input type="number" name="attr_ppp_multi" value="0"></li>
+        <li><input type="number" name="attr_ppp_total"  value="0"></li>
+        <li><input type="number" name="attr_ppp_libre"  value="0"></li>
+        <li><input type="number" name="attr_ppp_libre_utilise"  value="0"></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li>Talent psychique</li>
+        <li><input type="number" name="attr_tp_actuel" value="0"></li>
+        <li><input type="number" name="attr_tp_multi" value="0"></li>
+        <li><input type="number" name="attr_tp_total"  value="0"></li>
+        <li>-</li>
+        <li>-</li>
+    </ul><br>
+    
+    <ul class="sheet-ul3">
+        <li></li>
+        <li></li>
+        <li>ACTUEL</li>
+        <li>BONUS</li>
+        <li>TOTAL</li>
+    </ul>
+    <ul class="sheet-ul4">
+        <li><button type="roll" value=""></button></li>
+        <li>Projection psychique</li>
+        <li><input type="number" name="attr_pp_actuel" value="0"></li>
+        <li><input type="number" name="attr_dexterite_mod2" value="@{dexterite_mod}" disabled></li>
+        <li><input type="number" name="attr_pp_total" value="[[@{pp_actuel}+@{pp_bonus1}+@{dexterite_mod}]]" disabled></li>
+    </ul><br>
+    
+    <p class="sheet-title1">Discipline</p>
+    
+    <fieldset class="repeating_psy">
+        <ul class='sheet-ul5'>
+            <li>
+                <p>Nom :</p><input type="text" name="attr_psy_nom" placeholder="....."><br>
+                <p>Action :</p><input type="text" name="attr_psy_action" placeholder="....."><br>
+                <p>Niveau :</p><input type="number" name="attr_psy_niv" value="0"><br>
+                <p>Maintient :</p><input type="text" name="attr_psy_maintien" placeholder="....."><br>
+            </li>
+        </ul>
+        <ul class='sheet-ul6'>
+            <li><textarea name="attr_psy_description"></textarea></li>
+        </ul>
+        <ul class='sheet-ul7'>
+            <li>
+                <p>20</p><p>Routinière</p><input type="text" name="attr_psy_20" placeholder="....."><br>
+                <p>40</p><p>Facile</p><input type="text" name="attr_psy_40" placeholder="....."><br>
+                <p>80</p><p>Moyenne</p><input type="text" name="attr_psy_80" placeholder="....."><br>
+                <p>120</p><p>Difficile</p><input type="text" name="attr_psy_120" placeholder="....."><br>
+                <p>140</p><p>Très Difficile</p><input type="text" name="attr_psy_140" placeholder="....."><br>
+                <p>180</p><p>Absurde</p><input type="text" name="attr_psy_180" placeholder="....."><br>
+                <p>240</p><p>Quasiment impossible</p><input type="text" name="attr_psy_240" placeholder="....."><br>
+                <p>280</p><p>Impossible</p><input type="text" name="attr_psy_280" placeholder="....."><br>
+                <p>320</p><p>Surhumain</p><input type="text" name="attr_psy_320" placeholder="....."><br>
+                <p>440</p><p>Zen</p><input type="text" name="attr_psy_440" placeholder="....."><br>
+            </li>
+        </ul><br>
+    </fieldset>
+</div>
+
+
+
+<div class="sheet-ki">
+    <p class="sheet-title1">Ki et Accumulation</p>
+    
+    <ul class="sheet-ul1">
+        <li>            </li>
+        <li>ACTUEL      </li>
+        <li>TOTAL       </li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li>Développement intérieur (DI)</li>
+        <li><input type="number" name="attr_di_actuel" value="0"></li>
+        <li><input type="number" name="attr_di_total"  value="0"></li>
+    </ul><br>
+    
+    <ul class="sheet-ul1">
+        <li>            </li>
+        <li>KI ACTUEL   </li>
+        <li>KI TOTAL    </li>
+        <li>ACC/TOUR    </li>
+        <li>ACC BONUS   </li>
+        <li>ACC TOTAL   </li>
+        <li>ACC ACTUEL  </li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li>Force</li>
+        <li><input type="number" name="attr_for_ki_actuel"               value="0">                                                                         </li>
+        <li><input type="number" name="attr_for_ki_total"                value="@{force_actuel}" disabled>                                                  </li>
+        <li><input type="number" name="attr_for_accumulation_par_tour"   value="@{for_accumulation_par_tour2}"   disabled>
+            <input type="number" name="attr_for_accumulation_par_tour2"  value="0" style="display: none">                                                   </li>
+        <li><input type="number" name="attr_for_accumulation_bonus"      value="0">                                                                         </li>
+        <li><input type="number" name="attr_for_accumulation_total"      value="[[@{for_accumulation_par_tour}+@{for_accumulation_bonus}]]" disabled>               </li>
+        <li><input type="number" name="attr_for_accumulation_actuel"     value="0">                                                                         </li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li>Dextérité</li>
+        <li><input type="number" name="attr_dex_ki_actuel"               value="0">                                                                         </li>
+        <li><input type="number" name="attr_dex_ki_total"                value="@{dexterite_actuel}" disabled>                                              </li>
+        <li><input type="number" name="attr_dex_accumulation_par_tour"   value="@{dex_accumulation_par_tour2}"   disabled>
+            <input type="number" name="attr_dex_accumulation_par_tour2"  value="0" style="display: none">                                                   </li>
+        <li><input type="number" name="attr_dex_accumulation_bonus"      value="0">                                                                         </li>
+        <li><input type="number" name="attr_dex_accumulation_total"      value="[[@{dex_accumulation_par_tour}+@{dex_accumulation_bonus}]]" disabled>               </li>
+        <li><input type="number" name="attr_dex_accumulation_actuel"     value="0">                                                                         </li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li>Agilité</li>
+        <li><input type="number" name="attr_agi_ki_actuel"               value="0">                                                                         </li>
+        <li><input type="number" name="attr_agi_ki_total"                value="@{agilite_actuel}" disabled>                                                </li>
+        <li><input type="number" name="attr_agi_accumulation_par_tour"   value="@{agi_accumulation_par_tour2}"   disabled>
+            <input type="number" name="attr_agi_accumulation_par_tour2"  value="0" style="display: none">                                                   </li>
+        <li><input type="number" name="attr_agi_accumulation_bonus"      value="0">                                                                         </li>
+        <li><input type="number" name="attr_agi_accumulation_total"      value="[[@{agi_accumulation_par_tour}+@{agi_accumulation_bonus}]]" disabled>               </li>
+        <li><input type="number" name="attr_agi_accumulation_actuel"     value="0">                                                                         </li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li>Constitution</li>
+        <li><input type="number" name="attr_con_ki_actuel"               value="0">                                                                         </li>
+        <li><input type="number" name="attr_con_ki_total"                value="@{constitution_actuel}" disabled>                                           </li>
+        <li><input type="number" name="attr_con_accumulation_par_tour"   value="@{con_accumulation_par_tour2}"   disabled>
+            <input type="number" name="attr_con_accumulation_par_tour2"  value="0" style="display: none">                                                   </li>
+        <li><input type="number" name="attr_con_accumulation_bonus"      value="0">                                                                         </li>
+        <li><input type="number" name="attr_con_accumulation_total"      value="[[@{con_accumulation_par_tour}+@{con_accumulation_bonus}]]" disabled>               </li>
+        <li><input type="number" name="attr_con_accumulation_actuel"     value="0">                                                                         </li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li>Pouvoir</li>
+        <li><input type="number" name="attr_pou_ki_actuel"               value="0">                                                                         </li>
+        <li><input type="number" name="attr_pou_ki_total"                value="@{pouvoir_actuel}" disabled>                                                </li>
+        <li><input type="number" name="attr_pou_accumulation_par_tour"   value="@{pou_accumulation_par_tour2}"   disabled>
+            <input type="number" name="attr_pou_accumulation_par_tour2"  value="0" style="display: none">                                                   </li>
+        <li><input type="number" name="attr_pou_accumulation_bonus"      value="0">                                                                         </li>
+        <li><input type="number" name="attr_pou_accumulation_total"      value="[[@{pou_accumulation_par_tour}+@{pou_accumulation_bonus}]]" disabled>               </li>
+        <li><input type="number" name="attr_pou_accumulation_actuel"     value="0">                                                                         </li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li>Volonté</li>
+        <li><input type="number" name="attr_vol_ki_actuel"               value="0">                                                                         </li>
+        <li><input type="number" name="attr_vol_ki_total"                value="@{volonte_actuel}" disabled>                                                </li>
+        <li><input type="number" name="attr_vol_accumulation_par_tour"   value="@{vol_accumulation_par_tour2}"   disabled>
+            <input type="number" name="attr_vol_accumulation_par_tour2"  value="0" style="display: none">                                                   </li>
+        <li><input type="number" name="attr_vol_accumulation_bonus"      value="0">                                                                         </li>
+        <li><input type="number" name="attr_vol_accumulation_total"      value="[[@{vol_accumulation_par_tour}+@{vol_accumulation_bonus}]]" disabled>               </li>
+        <li><input type="number" name="attr_vol_accumulation_actuel"     value="0">                                                                         </li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li style="font-weight: bold">Total</li>
+        <li>-</li>
+        <li><input type="number" name="attr_vol_ki_total" value="[[@{force_actuel}+@{dexterite_actuel}+@{agilite_actuel}+@{constitution_actuel}+@{pouvoir_actuel}{volonte_actuel}]]" disabled>                                                </li>
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+    </ul>
+    
+    <input type="checkbox" name="attr_add_accumulation" value="0"> <p>Accumulation par tour</p><br>
+    <input type="checkbox" name="attr_reset_accumulation" value="0"> <p>Reset</p>
+    <input type="number" name="attr_add_accumulation" value="1" style="display: none">
+    <input type="number" name="attr_reset_accumulation" value="1" style="display: none">
+    
+    <br><br>
+    
+    <p class="sheet-title1">Modules</p>
+    
+    
+        <ul class="sheet-ul3">
+            <li>NOM</li>
+            <li>EFFETS</li>
+        </ul>
+        
+   <fieldset class="repeating_module">     
+        <ul class="sheet-ul4">
+            <li><input type="text" name="attr_module_nom" placeholder="....."></li>
+            <li><input type="text" name="attr_module_description" placeholder="....."></li>
+        </ul>
+    </fieldset>
+    
+    <br><br>
+    
+    <p class="sheet-title1">Arts Martiaux</p><br>
+    <fieldset class="repeating_art_martiaux">
+        <ul class="sheet-art_martiaux">
+            <li>
+                <p>Nom :</p><input type="text" name="attr_art_martiaux_nom" placeolder=".....">
+            </li>
+            <li>
+                <p>DI :</p><input type="number" name="attr_art_martiaux_di" value="0">
+            </li>
+            <li>
+                <p>Bonus :</p><input type="text" name="attr_art_martiaux_bonus" placeolder=".....">
+            </li><br>
+            <li>
+                <textarea name="attr_art_martiaux_description" placeholder="Avantages de l'art martial"></textarea>
+            </li>
+        </ul><br>
+    </fieldset>
+        
+    <br><br>
+
+    <p class="sheet-title1">Techniques</p><br>
+    <fieldset class="repeating_techniques">
+        <ul class="sheet-technique">
+            <li>
+                <p>Nom :</p><input type="text" name="attr_tech_nom">
+            </li>
+            <li>
+                <p>DI requis :</p><input type="number" name="attr_tech_di" value="0">
+            </li>
+            <li>
+                <p>Niveau :</p><input type="number" name="attr_tech_niv"       value="0">
+            </li>
+            <li>
+                <p>Force :</p><input type="number" name="attr_tech_for_ki" value="0"><br>
+                <p>Dextérité :</p><input type="number" name="attr_tech_dex_ki" value="0"><br>
+                <p>Agilité :</p><input type="number" name="attr_tech_agi_ki" value="0"><br>
+                <p>Constitution :</p><input type="number" name="attr_tech_con_ki" value="0"><br>
+                <p>Pouvoir :</p><input type="number" name="attr_tech_pou_ki" value="0"><br>
+                <p>Volonté :</p><input type="number" name="attr_tech_vol_ki" value="0"><br>
+            </li>
+        </ul>
+        <ul class="sheet-technique sheet-technique2">
+            <li><br>
+                <textarea name="attr_tech_description" placeholder="Description de votre technique"></textarea>
+            </li>
+        </ul><br><br>
+        
+        
+    </fieldset>
+</div>
+
+<div class="sheet-magie">
+    <p class="sheet-title1">Magie</p>
+    
+    <ul class="sheet-ul1">
+        <li></li>
+        <li>ACTUEL</li>
+        <li>TOTAL</li>
+        <li>BASE</li>
+        <li>BONUS</li>
+        <li>Nbr MULTI</li>
+        <li>MULTI</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li>Zéon</li>
+        <li><input type="number" name="attr_zeon_actuel"      value="0" ></li>
+        <li><input type="number" name="attr_zeon_total"       value="[[@{zeon_base}+@{zeon_bonus}+@{zeon_multi}]]" disabled></li>
+        <li><input type="number" name="attr_zeon_base"        value="@{zeon_base2}" disabled><input type="number" name="attr_zeon_base2"  value="0" style="display: none"></li>
+        <li><input type="number" name="attr_zeon_bonus"       value="0" ></li>
+        <li><input type="number" name="attr_zeon_nbrMulti"    value="0" ></li>
+        <li><input type="number" name="attr_zeon_multi"       value="[[@{zeon_nbrMulti}*@{pouvoir_actuel}]]" disabled></li>
+    </ul>
+    <ul class="sheet-ul2">
+        <li>AMR</li>
+        <li><input type="number" name="attr_amr_actuel"      value="0" ></li>
+        <li><input type="number" name="attr_amr_total"       value="[[@{amr_base}+@{amr_bonus}+@{amr_multi}]]" disabled></li>
+        <li><input type="number" name="attr_amr_base"        value="@{amr_base2}" disabled><input type="number" name="attr_zeon_base2"  value="0" style="display: none"></li>
+        <li><input type="number" name="attr_amr_bonus"       value="0" ></li>
+        <li><input type="number" name="attr_amr_nbrMulti"    value="0" ></li>
+        <li><input type="number" name="attr_amr_multi"       value="[[@{amr_nbrMulti}*@{amr_base2}]]" disabled></li>
+    </ul><br>
+    
+    <ul class="sheet-ul6">
+        <li></li>
+        <li></li>
+        <li>ACTUEL</li>
+        <li>BONUS</li>
+        <li>TOTAL</li>
+    </ul>
+    <ul class="sheet-ul7">
+        <li><button type="roll" value=""></button></li>
+        <li>Projection magique offensive</li>
+        <li><input type="number" name="attr_pm_actuel" value="0"></li>
+        <li><input type="number" name="attr_pm_bonus1" value="0"></li>
+        <li><input type="number" name="attr_pm_total" value="[[@{pm_actuel}+@{pm_bonus1}+@{dexterite_mod}]]" disabled></li>
+    </ul>
+    <ul class="sheet-ul7">
+        <li><button type="roll" value=""></button></li>
+        <li>Projection magique défensive</li>
+        <li><input type="number" name="attr_pm_actuel" value="0"></li>
+        <li><input type="number" name="attr_pm_bonus2" value="0"></li>
+        <li><input type="number" name="attr_pm_total" value="[[@{pm_actuel}+@{pm_bonus2}+@{dexterite_mod}]]" disabled></li>
+    </ul><br>
+    
+    <ul class="sheet-ul9">
+        <li></li>
+        <li></li>
+        <li>BASE</li>
+        <li>BONUS</li>
+        <li>CLASSE</li>
+        <li>TOTAL</li>
+    </ul>
+    <ul class="sheet-ul8">
+        <li><button type="roll" value=""></button></li>
+        <li>Convoquer</li>
+        <li><input type="number" name="attr_convoquer_base"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_convoquer_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_convoquer_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_convoquer_total"    value="[[@{pouvoir_mod}+@{convoquer_base}+@{convoquer_bonus}+@{convoquer_classe}]]" disabled></li>
+    </ul>
+    <ul class="sheet-ul8">
+        <li><button type="roll" value=""></button></li>
+        <li>Dominer</li>
+        <li><input type="number" name="attr_dominer_base"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_dominer_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_dominer_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_dominer_total"    value="[[@{volonte_mod}+@{dominer_base}+@{dominer_bonus}+@{dominer_classe}]]" disabled></li>
+    </ul>
+    <ul class="sheet-ul8">
+        <li><button type="roll" value=""></button></li>
+        <li>Lier</li>
+        <li><input type="number" name="attr_lier_base"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_lier_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_lier_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_lier_total"    value="[[@{pouvoir_mod}+@{lier_base}+@{lier_bonus}+@{lier_classe}]]" disabled></li>
+    </ul>
+    <ul class="sheet-ul8">
+        <li><button type="roll" value=""></button></li>
+        <li>Révoquer</li>
+        <li><input type="number" name="attr_revoquer_base"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_revoquer_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_revoquer_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_revoquer_total"    value="[[@{pouvoir_mod}+@{revoquer_base}+@{revoquer_bonus}+@{revoquer_classe}]]" disabled></li>
+    </ul><br>
+    
+    
+    <ul class="sheet-ul5">
+        <li>
+            <p>Essence :</p><input type="number" name="attr_sort_essence" value="0">
+            <p>Illusion :</p><input type="number" name="attr_sort_illusion" value="0">
+            <p>Création :</p><input type="number" name="attr_sort_creation" value="0">
+            <p>Destruction :</p><input type="number" name="attr_sort_destruction" value="0">
+            <p>Obscurité :</p><input type="number" name="attr_sort_obscurite" value="0"><br>
+            <p>Lumière :</p><input type="number" name="attr_sort_lumière" value="0">
+            <p>Eau :</p><input type="number" name="attr_sort_eau" value="0">
+            <p>Terre :</p><input type="number" name="attr_sort_terre" value="0">
+            <p>Air :</p><input type="number" name="attr_sort_air" value="0">
+            <p>Feu :</p><input type="number" name="attr_sort_feu" value="0">
+        </li>
+    </ul><br>
+    <p class="sheet-title1">Sorts</p>
+    
+    <fieldset class="repeating_sorts">
+        <ul class='sheet-ul4'>
+            <li>
+                <p>Nom :</p><input type="text" name="attr_sort_nom" placeholder="....."><br>
+                <p>Niveau :</p><input type="number" name="attr_sort_niv" value="0"><br>
+                <p>Action :</p><input type="text" name="attr_sort_action" placeholder="....."><br>
+                <p>Type :</p><input type="text" name="attr_sort_type" placeholder="....."><br>
+            </li>
+        </ul>
+        <ul class='sheet-ul3'>
+            <li>
+                <p></p>
+                <p>Zéon</p>
+                <p>Int. R</p>
+                <p>Maintien</p>
+                <p>Effet</p>
+            </li><br>
+            <li>
+                <p>Initial</p>          <input type="number" name="attr_sort_initial_zeon" value="0">         <input type="number" name="attr_int_initial" value="0">         <input type="number" name="attr_maintien_initial" value="0">        <input type="text" name="attr_sort_initial2" placeholder="....."><br>
+                <p>Intermédiaire</p>    <input type="number" name="attr_sort_intermediaire_zeon" value="0">   <input type="number" name="attr_int_intermediaire" value="0">   <input type="number" name="attr_maintien_intermediaire" value="0">  <input type="text" name="attr_sort_intermediaire2" placeholder="....."><br>
+                <p>Avancé</p>           <input type="number" name="attr_sort_avance_zeon" value="0">          <input type="number" name="attr_int_avance" value="0">          <input type="number" name="attr_maintien_avance" value="0">         <input type="text" name="attr_sort_avance2" placeholder="....."><br>
+                <p>Arcane</p>           <input type="number" name="attr_sort_arcane_zeon" value="0">          <input type="number" name="attr_int_arcane" value="0">          <input type="number" name="attr_maintien_arcane" value="0">         <input type="text" name="attr_sort_arcane2" placeholder=".....">
+            </li>
+        </ul>
+        <textarea name="attr_sort_description" placeholder="....."></textarea>
+    </fieldset>
+</div>
+
+
+
+<div class="sheet-historique">
+    <p class="sheet-title1">Avantages</p>
+    
+    <fieldset class="repeating_avantage">
+        <input type="text" name="attr_avantage" placeholder=".....">
+    </fieldset><br><br>
+    
+    <p class="sheet-title1">Désavantages</p>
+    
+    <fieldset class="repeating_desavantage">
+        <input type="text" name="attr_desavantage" placeholder=".....">
+    </fieldset><br><br>
+    
+    
+    <p class="sheet-title1">Historique</p>
+    
+    <ul>
+        <li>Point de formation (PF)</li>
+        <li><input type="number" name="attr_pf" value="600"></li>
+        <li> / </li>
+        <li><input type="number" name="attr_pf_totale" value="600"></li>
+    </ul><br>
+    
+    <fieldset class="repeating_historique">
+        <input type="text" name="attr_historique" placeholder=".....">
+    </fieldset>
+</div>
+
+<div class="sheet-autre_informations">
+    <p class="sheet-title1">Statistique</p>
+    
+    <ul class="sheet-ul1">
+        <li></li>
+        <li>ACTUEL</li>
+        <li>TOTAL</li>
+        <li>BASE</li>
+        <li>BONUS</li>
+        <li>Nbr MULTI</li>
+        <li>MULTI</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li>Point de vie</li>
+        <li><input type="number" name="attr_pv_actuel"      value="0" ></li>
+        <li><input type="number" name="attr_pv_total"       value="[[@{pv_base}+@{pv_bonus}+@{pv_multi}]]" disabled></li>
+        <li><input type="number" name="attr_pv_base"        value="@{pv_base2}" disabled><input type="number" name="attr_pv_base2"  value="0" style="display: none"></li>
+        <li><input type="number" name="attr_pv_bonus"       value="0" ></li>
+        <li><input type="number" name="attr_pv_nbrMulti"    value="0" ></li>
+        <li><input type="number" name="attr_pv_multi"       value="[[@{pv_nbrMulti}*@{constitution_actuel}]]" disabled></li>
+    </ul>
+    <ul class="sheet-ul2">
+        <li>Zéon</li>
+        <li><input type="number" name="attr_zeon_actuel"      value="0" ></li>
+        <li><input type="number" name="attr_zeon_total"       value="[[@{zeon_base}+@{zeon_bonus}+@{zeon_multi}]]" disabled></li>
+        <li><input type="number" name="attr_zeon_base"        value="@{zeon_base2}" disabled><input type="number" name="attr_zeon_base2"  value="0" style="display: none"></li>
+        <li><input type="number" name="attr_zeon_bonus"       value="0" ></li>
+        <li><input type="number" name="attr_zeon_nbrMulti"    value="0" ></li>
+        <li><input type="number" name="attr_zeon_multi"       value="[[@{zeon_nbrMulti}*@{pouvoir_actuel}]]" disabled></li>
+    </ul>
+    <ul class="sheet-ul2">
+        <li>AMR</li>
+        <li><input type="number" name="attr_amr_actuel"      value="0" ></li>
+        <li><input type="number" name="attr_amr_total"       value="[[@{amr_base}+@{amr_bonus}+@{amr_multi}]]" disabled></li>
+        <li><input type="number" name="attr_amr_base"        value="@{amr_base2}" disabled><input type="number" name="attr_zeon_base2"  value="0" style="display: none"></li>
+        <li><input type="number" name="attr_amr_bonus"       value="0" ></li>
+        <li><input type="number" name="attr_amr_nbrMulti"    value="0" ></li>
+        <li><input type="number" name="attr_amr_multi"       value="[[@{amr_nbrMulti}*@{amr_base2}]]" disabled></li>
+    </ul><br>
+    
+    <ul class="sheet-ul1">
+        <li></li>
+        <li>BASE</li>
+        <li>BONUS</li>
+        <li>TOTAL</li>
+    </ul>
+    
+    <ul class="sheet-ul3">
+        <li>Mouvement</li>
+        <li><input type="number" name="attr_mouvement_base"     value="@{agilite_actuel}"                           disabled></li>
+        <li><input type="number" name="attr_mouvement_bonus"    value="0"                                                   ></li>
+        <li><input type="number" name="attr_mouvement_total"    value="[[@{mouvement_base}+@{mouvement_bonus}]]"    disabled></li>
+        <li>
+            <span name="attr_distance_max"></span>
+            <input type="text" name="attr_distance_max" style="display: none">
+        </li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li>Fatigue</li>
+        <li><input type="number" name="attr_fatigue_base"     value="@{constitution_actuel}"            disabled></li>
+        <li><input type="number" name="attr_fatigue_bonus"    value="0"                                         ></li>
+        <li><input type="number" name="attr_fatigue_total"    value="[[@{fatigue_base}+@{fatigue_bonus}" disabled></li>
+        <li>
+            <span name="attr_fatigue_malus"></span>
+            <input type="text" name="attr_fatigue_malus" style="display: none">
+        </li>
+    </ul>
+</div>
+
+<div class="sheet-caracteristique">
+    <p class="sheet-title1">Caractéristique</p>
+    
+    <ul class="sheet-ul1">
+        <li></li>
+        <li>BASE</li>
+        <li>ACTUEL</li>
+        <li>MOD.</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCAR....@{nom}....Test d'Agilité....@{agilite_base}....@{agilite_actuel}....?{Bonus | 0}"></button></li>
+        <li>Agilité</li>
+        <li>AGI</li>
+        <li><input type="number" name="attr_agilite_base"   value="1"               max="20" min="1">       </li>
+        <li><input type="number" name="attr_agilite_actuel" value="1"               max="20" min="1">       </li>
+        <li><input type="number" name="attr_agilite_mod2"   value="@{agilite_mod}"  disabled>               
+            <input type="number" name="attr_agilite_mod"    value="0"               style="display: none">  </li>
+        <li>L'Agilité représente l'habileté corporelle du personnage, sa vitesse de déplacement et son sens de l'équilibre. Elle mesure son aptitude acrobatique ou sa facilité à esquiver les attaques. Avec la Dextérité, cette caractéristique influence sa vitesse de réaction.</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCAR....@{nom}....Test de Constitution....@{constitution_base}....@{constitution_actuel}....?{Bonus | 0}"></button></li>
+        <li>Constitution</li>
+        <li>CON</li>
+        <li><input type="number" name="attr_constitution_base"     value="1" max="20" min="1">      </li>
+        <li><input type="number" name="attr_constitution_actuel"   value="1" max="20" min="1">      </li>
+        <li><input type="number" name="attr_constitution_mod2"     value="@{constitution_mod}" disabled>  
+            <input type="number" name="attr_constitution_mod"      value="0" style="display: none"> </li>
+        <li>La Constitution mesure l'endurance et la vitalité du personnage, sa résistance à la fatigue et sa capacité à encaisser les coups. Un personnage avec une Constitution élevée a une grande résistance physique et récupère bien des maladies et des blessures. Cette caractéristique indique la quantité de dégâts que peut subir le personnage avant de mourir.</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCAR....@{nom}....Test de Dextérité....@{dexterite_base}....@{dexterite_actuel}....?{Bonus | 0}"></button></li>
+        <li>Dextérité</li>
+        <li>DEX</li>
+        <li><input type="number" name="attr_dexterite_base"     value="1" max="20" min="1">         </li>
+        <li><input type="number" name="attr_dexterite_actuel"   value="1" max="20" min="1">         </li>
+        <li><input type="number" name="attr_dexterite_mod2"     value="@{dexterite_mod}" disabled>
+            <input type="number" name="attr_dexterite_mod"      value="0" style="display: none"> </li>
+        <li>La Dextérité détermine l'habileté manuelle du personnage, la rapidité de ses gestes et sa précision. Avec l'Agilité, elle représente sa vitesse de réaction, c'est-à-dire sa capacité à répondre aussi rapidement que possible à une situation dangereuse, une menace ou un problème.</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCAR....@{nom}....Test de Force....@{force_base}....@{force_actuel}....?{Bonus | 0}"></button></li>
+        <li>Force</li>
+        <li>FOR</li>
+        <li><input type="number" name="attr_force_base"     value="1" max="20" min="1">         </li>
+        <li><input type="number" name="attr_force_actuel"   value="1" max="20" min="1">         </li>
+        <li><input type="number" name="attr_force_mod2"     value="@{force_mod}" disabled>  
+            <input type="number" name="attr_force_mod"      value="0" style="display: none">    </li>
+        <li>La Force évalue la capacité d'accomplir des efforts physiques, la musculature et la vigueur du personnage. Cette caractéristique permet de soulever des poids importants, d'infliger plus de dégâts à chaque coups et de briser des objets.</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCAR....@{nom}....Test d'Intelligence....@{intelligence_base}....@{intelligence_actuel}....?{Bonus | 0}"></button></li>
+        <li>Intelligence</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_intelligence_base"     value="1" max="20" min="1">  </li>
+        <li><input type="number" name="attr_intelligence_actuel"   value="1" max="20" min="1">  </li>
+        <li><input type="number" name="attr_intelligence_mod2"     value="@{intelligence_mod}" disabled>
+            <input type="number" name="attr_intelligence_mod"      value="0" style="display: none"> </li>
+        <li>L'Intelligence concernce les champs du raisonnement, de l'apprentissage et de la mémoire. De cette caractéristique dépendent les connaissances intellectuelles et logiques, ainsi que la capacité du personnage a comprendre et développer des sorts.</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCAR....@{nom}....Test de Perception....@{perception_base}....@{perception_actuel}....?{Bonus | 0}"></button></li>
+        <li>Perception</li>
+        <li>PER</li>
+        <li><input type="number" name="attr_perception_base"     value="1" max="20" min="1">        </li>
+        <li><input type="number" name="attr_perception_actuel"   value="1" max="20" min="1">        </li>
+        <li><input type="number" name="attr_perception_mod2"     value="@{perception_mod}" disabled>  
+            <input type="number" name="attr_perception_mod"      value="0" style="display: none">   </li>
+        <li>La Perception mesure l'acuité sensorielle du personnage et sa capacité à remarquer ce qui se passe autour de lui. Elle représente ses cinq sens et son instinct.</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCAR....@{nom}....Test de Pouvoir....@{pouvoir_base}....@{pouvoir_actuel}....?{Bonus | 0}"></button></li>
+        <li>Pouvoir</li>
+        <li>POU</li>
+        <li><input type="number" name="attr_pouvoir_base"     value="1" max="20" min="1">       </li>
+        <li><input type="number" name="attr_pouvoir_actuel"   value="1" max="20" min="1">       </li>
+        <li><input type="number" name="attr_pouvoir_mod2"     value="@{pouvoir_mod}" disabled>  
+            <input type="number" name="attr_pouvoir_mod"      value="0" style="display: none">  </li>
+        <li>Le Pouvoir représente la puissance animique ou spirituelle du personnage. Plus elle est élevée, plus il pourra influencer ou résister au surnaturel et se démarquer des autres individus.</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCAR....@{nom}....Test de Volonté....@{volonte_base}....@{volonte_actuel}....?{Bonus | 0}"></button></li>
+        <li>Volonté</li>
+        <li>VOL</li>
+        <li><input type="number" name="attr_volonte_base"     value="1" max="20" min="1">       </li>
+        <li><input type="number" name="attr_volonte_actuel"   value="1" max="20" min="1">       </li>
+        <li><input type="number" name="attr_volonte_mod2"     value="@{volonte_mod}" disabled>  
+            <input type="number" name="attr_volonte_mod"      value="0" style="display: none">  </li>
+        <li>La Volonté mesure la vigueur mentale d'un personnage, son impassibilités et sa ténacité. On l'utilise aussi bien pour résister aux disciplines psychiques que pour les employer.</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCAR....@{nom}....Test d'Apparence....@{apparence_base}....@{apparence_actuel}....?{Bonus | 0}"></button></li>
+        <li>Apparence</li>
+        <li>APP</li>
+        <li><input type="number" name="attr_apparence_base"     value="1" max="10" min="1">  </li>
+        <li><input type="number" name="attr_apparence_actuel"   value="1" max="10" min="1">  </li>
+        <li>L'Apparence reflète la beauté. On la calcule toujours après les caractéristiques principales et ne compte pas dans la génération de vos caractéristiques.</li>
+    </ul>
+    
+</div>
+
+<div class="sheet-resistance">
+
+    <ul class="sheet-ul1">
+        <li>Résistances</li>
+        <li>BASE</li>
+        <li>MOD.</li>
+        <li>SPEC.</li>
+        <li>TOTAL</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaRES....@{nom}....Test de Présence....@{pf_totale}....@{presence_mod}....@{presence_spe}....?{Bonus | 0}....?{Difficulté | 0}"></button></li>
+        <li>Présence</li>
+        <li>-</li>
+        <li><input type="number" name="attr_presence_base"  value="[[@{pf_totale}/20]]"                                     disabled></li>
+        <li><input type="number" name="attr_presence_mod"   value="0"                                                       disabled></li>
+        <li><input type="number" name="attr_presence_spe"   value="0"                                                               ></li>
+        <li><input type="number" name="attr_presence_total" value="[[@{presence_base}+@{presence_mod}+@{presence_spe}]]"    disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaRES....@{nom}....Test de Physique....@{pf_totale}....@{physique_mod}....@{physique_spe}....?{Bonus | 0}....?{Difficulté | 0}"></button></li>
+        <li>Physique</li>
+        <li>CON</li>
+        <li><input type="number" name="attr_physique_base"  value="@{presence_total}"                                       disabled></li>
+        <li><input type="number" name="attr_physique_mod"   value="@{constitution_mod}"                                     disabled></li>
+        <li><input type="number" name="attr_physique_spe"   value="0"                                                               ></li>
+        <li><input type="number" name="attr_physique_total" value="[[@{physique_base}+@{physique_mod}+@{physique_spe}]]"    disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaRES....@{nom}....Test de Maladies....@{pf_totale}....@{maladies_mod}....@{maladies_spe}....?{Bonus | 0}....?{Difficulté | 0}"></button></li>
+        <li>Maladies</li>
+        <li>CON</li>
+        <li><input type="number" name="attr_maladies_base"  value="@{presence_total}"                                       disabled></li>
+        <li><input type="number" name="attr_maladies_mod"   value="@{constitution_mod}"                                     disabled></li>
+        <li><input type="number" name="attr_maladies_spe"   value="0"                                                               ></li>
+        <li><input type="number" name="attr_maladies_total" value="[[@{maladies_base}+@{maladies_mod}+@{maladies_spe}]]"    disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaRES....@{nom}....Test de Poison....@{pf_totale}....@{poisons_mod}....@{poisons_spe}....?{Bonus | 0}....?{Difficulté | 0}"></button></li>
+        <li>Poisons</li>
+        <li>CON</li>
+        <li><input type="number" name="attr_poisons_base"  value="@{presence_total}"                                       disabled></li>
+        <li><input type="number" name="attr_poisons_mod"   value="@{constitution_mod}"                                     disabled></li>
+        <li><input type="number" name="attr_poisons_spe"   value="0"                                                               ></li>
+        <li><input type="number" name="attr_poisons_total" value="[[@{poisons_base}+@{poisons_mod}+@{poisons_spe}]]"       disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaRES....@{nom}....Test de Mystique....@{pf_totale}....@{mystique_mod}....@{mystique_spe}....?{Bonus | 0}....?{Difficulté | 0}"></button></li>
+        <li>Mystique</li>
+        <li>POU</li>
+        <li><input type="number" name="attr_mystique_base"  value="@{presence_total}"                                       disabled></li>
+        <li><input type="number" name="attr_mystique_mod"   value="@{pouvoir_mod}"                                          disabled></li>
+        <li><input type="number" name="attr_mystique_spe"   value="0"                                                               ></li>
+        <li><input type="number" name="attr_mystique_total" value="[[@{mystique_base}+@{mystique_mod}+@{mystique_spe}]]"    disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaRES....@{nom}....Test de Psychique....@{pf_totale}....@{psychique_mod}....@{psychique_spe}....?{Bonus | 0}....?{Difficulté | 0}"></button></li>
+        <li>Psychique</li>
+        <li>VOL</li>
+        <li><input type="number" name="attr_psychique_base"  value="@{presence_total}"                                       disabled></li>
+        <li><input type="number" name="attr_psychique_mod"   value="@{volonte_mod}"                                          disabled></li>
+        <li><input type="number" name="attr_psychique_spe"   value="0"                                                               ></li>
+        <li><input type="number" name="attr_psychique_total" value="[[@{psychique_base}+@{psychique_mod}+@{psychique_spe}]]"    disabled></li>
+    </ul>
+</div>
+
+<div class="sheet-competence_secondaire">
+    
+    <ul class="sheet-ul1">
+        <li>Athlétiques</li>
+        <li>BASE</li>
+        <li>BONUS</li>
+        <li>SPEC.</li>
+        <li>CLASSE</li>
+        <li>TOTAL</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Acrobatie....@{agilite_mod}....@{acrobatie_base}....@{acrobatie_bonus}....@{acrobatie_spec}....@{acrobatie_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Acrobatie</li>
+        <li>AGI</li>
+        <li><input type="number" name="attr_acrobatie_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_acrobatie_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_acrobatie_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_acrobatie_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_acrobatie_total"    value="[[@{agilite_mod}+@{acrobatie_base}+@{acrobatie_bonus}+@{acrobatie_spec}+@{acrobatie_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Athlétisme....@{agilite_mod}....@{athlétisme_base}....@{athlétisme_bonus}....@{athlétisme_spec}....@{athlétisme_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Athlétisme</li>
+        <li>AGI</li>
+        <li><input type="number" name="attr_athlétisme_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_athlétisme_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_athlétisme_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_athlétisme_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_athlétisme_total"    value="[[@{agilite_mod}+@{athlétisme_base}+@{athlétisme_bonus}+@{athlétisme_spec}+@{athlétisme_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Equitation....@{agilite_mod}....@{equitation_base}....@{equitation_bonus}....@{equitation_spec}....@{equitation_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Équitation</li>
+        <li>AGI</li>
+        <li><input type="number" name="attr_equitation_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_equitation_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_equitation_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_equitation_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_equitation_total"    value="[[@{agilite_mod}+@{equitation_base}+@{equitation_bonus}+@{equitation_spec}+@{equitation_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Escalade....@{agilite_mod}....@{escalade_base}....@{escalade_bonus}....@{escalade_spec}....@{escalade_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Escalade</li>
+        <li>AGI</li>
+        <li><input type="number" name="attr_escalade_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_escalade_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_escalade_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_escalade_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_escalade_total"    value="[[@{agilite_mod}+@{escalade_base}+@{escalade_bonus}+@{escalade_spec}+@{escalade_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Natation....@{agilite_mod}....@{natation_base}....@{natation_bonus}....@{natation_spec}....@{natation_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Natation</li>
+        <li>AGI</li>
+        <li><input type="number" name="attr_natation_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_natation_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_natation_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_natation_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_natation_total"    value="[[@{agilite_mod}+@{natation_base}+@{natation_bonus}+@{natation_spec}+@{natation_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Saut....@{force_mod}....@{saut_base}....@{saut_bonus}....@{saut_spec}....@{saut_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Saut</li>
+        <li>FOR</li>
+        <li><input type="number" name="attr_saut_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_saut_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_saut_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_saut_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_saut_total"    value="[[@{force_mod}+@{saut_base}+@{saut_bonus}+@{saut_spec}+@{saut_classe}]]" disabled></li>
+    </ul>
+    <br>
+    
+    <ul class="sheet-ul1">
+        <li>Vitales</li>
+        <li>BASE</li>
+        <li>BONUS</li>
+        <li>SPEC.</li>
+        <li>CLASSE</li>
+        <li>TOTAL</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Impassibilite....@{volonte_mod}....@{impassibilite_base}....@{impassibilite_bonus}....@{impassibilite_spec}....@{impassibilite_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Impassibilité</li>
+        <li>VOL</li>
+        <li><input type="number" name="attr_impassibilite_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_impassibilite_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_impassibilite_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_impassibilite_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_impassibilite_total"    value="[[@{volonte_mod}+@{impassibilite_base}+@{impassibilite_bonus}+@{impassibilite_spec}+@{impassibilite_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Prouesse de Force....@{force_mod}....@{pr_de_force_base}....@{pr_de_force_bonus}....@{pr_de_force_spec}....@{pr_de_force_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Pr. de Force</li>
+        <li>FOR</li>
+        <li><input type="number" name="attr_pr_de_force_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_pr_de_force_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_pr_de_force_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_pr_de_force_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_pr_de_force_total"    value="[[@{force_mod}+@{pr_de_force_base}+@{pr_de_force_bonus}+@{pr_de_force_spec}+@{pr_de_force_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Résistance à la douleur....@{volonte_mod}....@{res_douleur_base}....@{res_douleur_bonus}....@{res_douleur_spec}....@{res_douleur_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Résistance à la douleur</li>
+        <li>VOL</li>
+        <li><input type="number" name="attr_res_douleur_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_res_douleur_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_res_douleur_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_res_douleur_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_res_douleur_total"    value="[[@{volonte_mod}+@{res_douleur_base}+@{res_douleur_bonus}+@{res_douleur_spec}+@{res_douleur_classe}]]" disabled></li>
+    </ul>
+    <br>
+    
+    <ul class="sheet-ul1">
+        <li>Sensorielles</li>
+        <li>BASE</li>
+        <li>BONUS</li>
+        <li>SPEC.</li>
+        <li>CLASSE</li>
+        <li>TOTAL</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Observation'....@{perception_mod}....@{observation_base}....@{observation_bonus}....@{observation_spec}....@{observation_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Observation</li>
+        <li>PER</li>
+        <li><input type="number" name="attr_observation_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_observation_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_observation_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_observation_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_observation_total"    value="[[@{perception_mod}+@{observation_base}+@{observation_bonus}+@{observation_spec}+@{observation_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Pistage'....@{perception_mod}....@{pistage_base}....@{pistage_bonus}....@{pistage_spec}....@{pistage_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Pistage</li>
+        <li>PER</li>
+        <li><input type="number" name="attr_pistage_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_pistage_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_pistage_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_pistage_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_pistage_total"    value="[[@{perception_mod}+@{pistage_base}+@{pistage_bonus}+@{pistage_spec}+@{pistage_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Vigilance'....@{perception_mod}....@{vigilance_base}....@{vigilance_bonus}....@{vigilance_spec}....@{vigilance_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Vigilance</li>
+        <li>PER</li>
+        <li><input type="number" name="attr_vigilance_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_vigilance_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_vigilance_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_vigilance_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_vigilance_total"    value="[[@{perception_mod}+@{vigilance_base}+@{vigilance_bonus}+@{vigilance_spec}+@{vigilance_classe}]]" disabled></li>
+    </ul>
+    <br>
+    
+    <ul class="sheet-ul1">
+        <li>Intellectuelles</li>
+        <li>BASE</li>
+        <li>BONUS</li>
+        <li>SPEC.</li>
+        <li>CLASSE</li>
+        <li>TOTAL</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Animaux....@{intelligence_mod}....@{animaux_base}....@{animaux_bonus}....@{animaux_spec}....@{animaux_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Animaux</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_animaux_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_animaux_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_animaux_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_animaux_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_animaux_total"    value="[[@{intelligence_mod}+@{animaux_base}+@{animaux_bonus}+@{animaux_spec}+@{animaux_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Estimation....@{intelligence_mod}....@{estimation_base}....@{estimation_bonus}....@{estimation_spec}....@{estimation_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Estimation</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_estimation_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_estimation_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_estimation_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_estimation_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_estimation_total"    value="[[@{intelligence_mod}+@{estimation_base}+@{estimation_bonus}+@{estimation_spec}+@{estimation_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Evaluation Magique....@{pouvoir_mod}....@{eval_magique_base}....@{eval_magique_bonus}....@{eval_magique_spec}....@{eval_magique_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Évaluation Magique</li>
+        <li>POU</li>
+        <li><input type="number" name="attr_eval_magique_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_eval_magique_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_eval_magique_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_eval_magique_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_eval_magique_total"    value="[[@{pouvoir_mod}+@{eval_magique_base}+@{eval_magique_bonus}+@{eval_magique_spec}+@{eval_magique_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Herboristerie....@{intelligence_mod}....@{herboristerie_base}....@{herboristerie_bonus}....@{herboristerie_spec}....@{herboristerie_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Herboristerie</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_herboristerie_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_herboristerie_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_herboristerie_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_herboristerie_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_herboristerie_total"    value="[[@{intelligence_mod}+@{herboristerie_base}+@{herboristerie_bonus}+@{herboristerie_spec}+@{herboristerie_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Histoire....@{intelligence_mod}....@{histoire_base}....@{histoire_bonus}....@{histoire_spec}....@{histoire_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Histoire</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_histoire_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_histoire_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_histoire_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_histoire_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_histoire_total"    value="[[@{intelligence_mod}+@{histoire_base}+@{histoire_bonus}+@{histoire_spec}+@{histoire_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Loi....@{intelligence_mod}....@{loi_base}....@{loi_bonus}....@{loi_spec}....@{loi_classe}....?{Bonus ? | 0}"></button></li>
+        <li>Loi</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_loi_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_loi_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_loi_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_loi_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_loi_total"    value="[[@{intelligence_mod}+@{loi_base}+@{loi_bonus}+@{loi_spec}+@{loi_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Médecine....@{intelligence_mod}....@{medecine_base}....@{medecine_bonus}....@{medecine_spec}....@{medecine_classe}....?{Bonus  | 0}"></button></li>
+        <li>Médecine</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_medecine_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_medecine_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_medecine_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_medecine_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_medecine_total"    value="[[@{intelligence_mod}+@{medecine_base}+@{medecine_bonus}+@{medecine_spec}+@{medecine_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Mémorisation....@{intelligence_mod}....@{memorisation_base}....@{memorisation_bonus}....@{memorisation_spec}....@{memorisation_classe}....?{Bonus  | 0}"></button></li>
+        <li>Mémorisation</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_memorisation_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_memorisation_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_memorisation_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_memorisation_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_memorisation_total"    value="[[@{intelligence_mod}+@{memorisation_base}+@{memorisation_bonus}+@{memorisation_spec}+@{memorisation_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Navigation....@{intelligence_mod}....@{navigation_base}....@{navigation_bonus}....@{navigation_spec}....@{navigation_classe}....?{Bonus  | 0}"></button></li>
+        <li>Navigation</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_navigation_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_navigation_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_navigation_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_navigation_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_navigation_total"    value="[[@{intelligence_mod}+@{navigation_base}+@{navigation_bonus}+@{navigation_spec}+@{navigation_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Occultisme....@{intelligence_mod}....@{occultisme_base}....@{occultisme_bonus}....@{occultisme_spec}....@{occultisme_classe}....?{Bonus  | 0}"></button></li>
+        <li>Occultisme</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_occultisme_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_occultisme_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_occultisme_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_occultisme_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_occultisme_total"    value="[[@{intelligence_mod}+@{occultisme_base}+@{occultisme_bonus}+@{occultisme_spec}+@{occultisme_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Science....@{intelligence_mod}....@{science_base}....@{science_bonus}....@{science_spec}....@{science_classe}....?{Bonus  | 0}"></button></li>
+        <li>Science</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_science_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_science_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_science_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_science_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_science_total"    value="[[@{intelligence_mod}+@{science_base}+@{science_bonus}+@{science_spec}+@{science_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Tactique....@{intelligence_mod}....@{tactique_base}....@{tactique_bonus}....@{tactique_spec}....@{tactique_classe}....?{Bonus  | 0}"></button></li>
+        <li>Tactique</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_tactique_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_tactique_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_tactique_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_tactique_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_tactique_total"    value="[[@{intelligence_mod}+@{tactique_base}+@{tactique_bonus}+@{tactique_spec}+@{tactique_classe}]]" disabled></li>
+    </ul>
+    <br>
+    
+    <ul class="sheet-ul1">
+        <li>Sociales</li>
+        <li>BASE</li>
+        <li>BONUS</li>
+        <li>SPEC.</li>
+        <li>CLASSE</li>
+        <li>TOTAL</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Commandement....@{pouvoir_mod}....@{commandement_base}....@{commandement_bonus}....@{commandement_spec}....@{commandement_classe}....?{Bonus  | 0}"></button></li>
+        <li>Commandement</li>
+        <li>POU</li>
+        <li><input type="number" name="attr_commandement_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_commandement_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_commandement_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_commandement_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_commandement_total"    value="[[@{pouvoir_mod}+@{commandement_base}+@{commandement_bonus}+@{commandement_spec}+@{commandement_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Commerce....@{intelligence_mod}....@{commerce_base}....@{commerce_bonus}....@{commerce_spec}....@{commerce_classe}....?{Bonus  | 0}"></button></li>
+        <li>Commerce</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_commerce_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_commerce_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_commerce_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_commerce_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_commerce_total"    value="[[@{intelligence_mod}+@{commerce_base}+@{commerce_bonus}+@{commerce_spec}+@{commerce_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Connaissance de la rue....@{intelligence_mod}....@{con_de_la_rue_base}....@{con_de_la_rue_bonus}....@{con_de_la_rue_spec}....@{con_de_la_rue_classe}....?{Bonus | 0}"></button></li>
+        <li>Connaissance de la rue</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_con_de_la_rue_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_con_de_la_rue_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_con_de_la_rue_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_con_de_la_rue_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_con_de_la_rue_total"    value="[[@{intelligence_mod}+@{con_de_la_rue_base}+@{con_de_la_rue_bonus}+@{con_de_la_rue_spec}+@{con_de_la_rue_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Étiquette....@{intelligence_mod}....@{etiquette_base}....@{etiquette_bonus}....@{etiquette_spec}....@{etiquette_classe}....?{Bonus | 0}"></button></li>
+        <li>Étiquette</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_etiquette_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_etiquette_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_etiquette_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_etiquette_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_etiquette_total"    value="[[@{intelligence_mod}+@{etiquette_base}+@{etiquette_bonus}+@{etiquette_spec}+@{etiquette_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Intimidation....@{volonte_mod}....@{intimidation_base}....@{intimidation_bonus}....@{intimidation_spec}....@{intimidation_classe}....?{Bonus | 0}"></button></li>
+        <li>Intimidation</li>
+        <li>VOL</li>
+        <li><input type="number" name="attr_intimidation_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_intimidation_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_intimidation_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_intimidation_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_intimidation_total"    value="[[@{volonte_mod}+@{intimidation_base}+@{intimidation_bonus}+@{intimidation_spec}+@{intimidation_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Persuasion....@{intelligence_mod}....@{persuasion_base}....@{persuasion_bonus}....@{persuasion_spec}....@{persuasion_classe}....?{Bonus | 0}"></button></li>
+        <li>Persuasion</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_persuasion_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_persuasion_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_persuasion_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_persuasion_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_persuasion_total"    value="[[@{intelligence_mod}+@{persuasion_base}+@{persuasion_bonus}+@{persuasion_spec}+@{persuasion_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Style....@{pouvoir_mod}....@{style_base}....@{style_bonus}....@{style_spec}....@{style_classe}....?{Bonus | 0}"></button></li>
+        <li>Style</li>
+        <li>POU</li>
+        <li><input type="number" name="attr_style_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_style_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_style_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_style_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_style_total"    value="[[@{pouvoir_mod}+@{style_base}+@{style_bonus}+@{style_spec}+@{style_classe}]]" disabled></li>
+    </ul>
+    <br>
+    
+    <ul class="sheet-ul1">
+        <li>Clandestines</li>
+        <li>BASE</li>
+        <li>BONUS</li>
+        <li>SPEC.</li>
+        <li>CLASSE</li>
+        <li>TOTAL</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Camouflage....@{perception_mod}....@{camouflage_base}....@{camouflage_bonus}....@{camouflage_spec}....@{camouflage_classe}....?{Bonus | 0}"></button></li>
+        <li>Camouflage</li>
+        <li>PER</li>
+        <li><input type="number" name="attr_camouflage_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_camouflage_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_camouflage_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_camouflage_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_camouflage_total"    value="[[@{perception_mod}+@{camouflage_base}+@{camouflage_bonus}+@{camouflage_spec}+@{camouflage_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Crochetage....@{dexterite_mod}....@{crochetage_base}....@{crochetage_bonus}....@{crochetage_spec}....@{crochetage_classe}....?{Bonus | 0}"></button></li>
+        <li>Crochetage</li>
+        <li>DEX</li>
+        <li><input type="number" name="attr_crochetage_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_crochetage_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_crochetage_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_crochetage_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_crochetage_total"    value="[[@{dexterite_mod}+@{crochetage_base}+@{crochetage_bonus}+@{crochetage_spec}+@{crochetage_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Déguisement....@{dexterite_mod}....@{deguisement_base}....@{deguisement_bonus}....@{deguisement_spec}....@{deguisement_classe}....?{Bonus | 0}"></button></li>
+        <li>Déguisement</li>
+        <li>DEX</li>
+        <li><input type="number" name="attr_deguisement_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_deguisement_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_deguisement_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_deguisement_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_deguisement_total"    value="[[@{dexterite_mod}+@{deguisement_base}+@{deguisement_bonus}+@{deguisement_spec}+@{deguisement_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Discrétion....@{agilite_mod}....@{discretion_base}....@{discretion_bonus}....@{discretion_spec}....@{discretion_classe}....?{Bonus | 0}"></button></li>
+        <li>Discrétion</li>
+        <li>AGI</li>
+        <li><input type="number" name="attr_discretion_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_discretion_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_discretion_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_discretion_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_discretion_total"    value="[[@{agilite_mod}+@{discretion_base}+@{discretion_bonus}+@{discretion_spec}+@{discretion_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Larçin....@{dexterite_mod}....@{larcin_base}....@{larcin_bonus}....@{larcin_spec}....@{larcin_classe}....?{Bonus | 0}"></button></li>
+        <li>Larcin</li>
+        <li>DEX</li>
+        <li><input type="number" name="attr_larcin_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_larcin_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_larcin_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_larcin_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_larcin_total"    value="[[@{dexterite_mod}+@{larcin_base}+@{larcin_bonus}+@{larcin_spec}+@{larcin_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Piège....@{dexterite_mod}....@{pieges_base}....@{pieges_bonus}....@{pieges_spec}....@{pieges_classe}....?{Bonus | 0}"></button></li>
+        <li>Pièges</li>
+        <li>DEX</li>
+        <li><input type="number" name="attr_pieges_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_pieges_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_pieges_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_pieges_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_pieges_total"    value="[[@{dexterite_mod}+@{pieges_base}+@{pieges_bonus}+@{pieges_spec}+@{pieges_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Poison....@{intelligence_mod}....@{poison_base}....@{poison_bonus}....@{poison_spec}....@{poison_classe}....?{Bonus | 0}"></button></li>
+        <li>Poison</li>
+        <li>INT</li>
+        <li><input type="number" name="attr_poison_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_poison_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_poison_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_poison_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_poison_total"    value="[[@{intelligence_mod}+@{poison_base}+@{poison_bonus}+@{poison_spec}+@{poison_classe}]]" disabled></li>
+    </ul>
+    
+    <br>
+    
+    <ul class="sheet-ul1">
+        <li>Créatives</li>
+        <li>BASE</li>
+        <li>BONUS</li>
+        <li>SPEC.</li>
+        <li>CLASSE</li>
+        <li>TOTAL</li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Art....@{pouvoir_mod}....@{art_base}....@{art_bonus}....@{art_spec}....@{art_classe}....?{Bonus | 0}"></button></li>
+        <li>Art</li>
+        <li>POU</li>
+        <li><input type="number" name="attr_art_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_art_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_art_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_art_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_art_total"    value="[[@{pouvoir_mod}+@{art_base}+@{art_bonus}+@{art_spec}+@{art_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Estimation....@{agilite_mod}....@{danse_base}....@{danse_bonus}....@{danse_spec}....@{danse_classe}....?{Bonus | 0}"></button></li>
+        <li>Danse</li>
+        <li>AGI</li>
+        <li><input type="number" name="attr_danse_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_danse_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_danse_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_danse_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_danse_total"    value="[[@{agilite_mod}+@{danse_base}+@{danse_bonus}+@{danse_spec}+@{danse_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Forge....@{dexterite_mod}....@{forge_base}....@{forge_bonus}....@{forge_spec}....@{forge_classe}....?{Bonus | 0}"></button></li>
+        <li>Forge</li>
+        <li>DEX</li>
+        <li><input type="number" name="attr_forge_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_forge_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_forge_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_forge_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_forge_total"    value="[[@{dexterite_mod}+@{forge_base}+@{forge_bonus}+@{forge_spec}+@{forge_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test d'Habileté Manuelle....@{dexterite_mod}....@{h_manuelle_base}....@{h_manuelle_bonus}....@{h_manuelle_spec}....@{h_manuelle_classe}....?{Bonus | 0}"></button></li>
+        <li>H. Manuelle</li>
+        <li>DEX</li>
+        <li><input type="number" name="attr_h_manuelle_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_h_manuelle_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_h_manuelle_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_h_manuelle_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_h_manuelle_total"    value="[[@{dexterite_mod}+@{h_manuelle_base}+@{h_manuelle_bonus}+@{h_manuelle_spec}+@{h_manuelle_classe}]]" disabled></li>
+    </ul>
+    
+    <ul class="sheet-ul2">
+        <li><button type="roll" value="!animaCOM....@{nom}....Test de Musique....@{pouvoir_mod}....@{musique_base}....@{musique_bonus}....@{musique_spec}....@{musique_classe}....?{Bonus | 0}"></button></li>
+        <li>Musique</li>
+        <li>POU</li>
+        <li><input type="number" name="attr_musique_base"     value="-30"> +                                                                                    </li>
+        <li><input type="number" name="attr_musique_bonus"    value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_musique_spec"     value="0"> +                                                                                    </li>
+        <li><input type="number" name="attr_musique_classe"   value="0"> =                                                                                    </li>
+        <li><input type="number" name="attr_musique_total"    value="[[@{pouvoir_mod}+@{musique_base}+@{musique_bonus}+@{musique_spec}+@{musique_classe}]]" disabled></li>
+    </ul>
+</div>
+
+
+
+
+<!-- SCRIPT ________________________________________________________________ -->
+
+<script type="text/worker">
+    on("change:add_accumulation", function() { getAttrs(["add_accumulation", "for_accumulation_actuel","dex_accumulation_actuel", "agi_accumulation_actuel", "con_accumulation_actuel", "pou_accumulation_actuel", "vol_accumulation_actuel", "for_accumulation_par_tour2","dex_accumulation_par_tour2", "agi_accumulation_par_tour2", "con_accumulation_par_tour2", "pou_accumulation_par_tour2", "vol_accumulation_par_tour2","for_accumulation_bonus", "dex_accumulation_bonus", "agi_accumulation_bonus", "con_accumulation_bonus", "pou_accumulation_bonus", "vol_accumulation_bonus",], function(values) {
+    if(values.add_accumulation == 0){
+        var force        = Number(values.for_accumulation_actuel)+Number(values.for_accumulation_par_tour2)+Number(values.for_accumulation_bonus);
+        var dexterite    = Number(values.dex_accumulation_actuel)+Number(values.dex_accumulation_par_tour2)+Number(values.dex_accumulation_bonus);
+        var agilite      = Number(values.agi_accumulation_actuel)+Number(values.agi_accumulation_par_tour2)+Number(values.agi_accumulation_bonus);
+        var constitution = Number(values.con_accumulation_actuel)+Number(values.con_accumulation_par_tour2)+Number(values.con_accumulation_bonus);
+        var pouvoir      = Number(values.pou_accumulation_actuel)+Number(values.pou_accumulation_par_tour2)+Number(values.pou_accumulation_bonus);
+        var volonte      = Number(values.vol_accumulation_actuel)+Number(values.vol_accumulation_par_tour2)+Number(values.vol_accumulation_bonus);
+        
+        setAttrs({ add_accumulation:        1});
+        setAttrs({ for_accumulation_actuel: force});
+        setAttrs({ dex_accumulation_actuel: dexterite});
+        setAttrs({ agi_accumulation_actuel: agilite});
+        setAttrs({ con_accumulation_actuel: constitution});
+        setAttrs({ pou_accumulation_actuel: pouvoir});
+        setAttrs({ vol_accumulation_actuel: volonte});
+    }
+    else{}
+    
+    })});
+
+    on("change:reset_accumulation", function() { getAttrs(["reset_accumulation", "for_accumulation_actuel","dex_accumulation_actuel", "agi_accumulation_actuel", "con_accumulation_actuel", "pou_accumulation_actuel", "vol_accumulation_actuel", "for_accumulation_par_tour2","dex_accumulation_par_tour2", "agi_accumulation_par_tour2", "con_accumulation_par_tour2", "pou_accumulation_par_tour2", "vol_accumulation_par_tour2",], function(values) {
+    setAttrs({ reset_accumulation:      1 });
+    setAttrs({ for_accumulation_actuel: 0 });
+    setAttrs({ dex_accumulation_actuel: 0 });
+    setAttrs({ agi_accumulation_actuel: 0 });
+    setAttrs({ con_accumulation_actuel: 0 });
+    setAttrs({ pou_accumulation_actuel: 0 });
+    setAttrs({ vol_accumulation_actuel: 0 });
+    
+    })});
+    
+    on("change:agilite_actuel", function() { getAttrs(["agilite_mod","agilite_actuel"], function(values) {
+        if (values.agilite_actuel == 1)   { setAttrs({ agilite_mod: -30   })}
+        if (values.agilite_actuel == 2)   { setAttrs({ agilite_mod: -20   })}
+        if (values.agilite_actuel == 3)   { setAttrs({ agilite_mod: -10   })}
+        if (values.agilite_actuel == 4)   { setAttrs({ agilite_mod: -5    })}
+        if (values.agilite_actuel == 5)   { setAttrs({ agilite_mod: 0     })}
+        if (values.agilite_actuel == 6)   { setAttrs({ agilite_mod: 5     })}
+        if (values.agilite_actuel == 7)   { setAttrs({ agilite_mod: 5     })}
+        if (values.agilite_actuel == 8)   { setAttrs({ agilite_mod: 10    })}
+        if (values.agilite_actuel == 9)   { setAttrs({ agilite_mod: 10    })}
+        if (values.agilite_actuel == 10)  { setAttrs({ agilite_mod: 15    })}
+        if (values.agilite_actuel == 11)  { setAttrs({ agilite_mod: 20    })}
+        if (values.agilite_actuel == 12)  { setAttrs({ agilite_mod: 20    })}
+        if (values.agilite_actuel == 13)  { setAttrs({ agilite_mod: 25    })}
+        if (values.agilite_actuel == 14)  { setAttrs({ agilite_mod: 25    })}
+        if (values.agilite_actuel == 15)  { setAttrs({ agilite_mod: 30    })}
+        if (values.agilite_actuel == 16)  { setAttrs({ agilite_mod: 35    })}
+        if (values.agilite_actuel == 17)  { setAttrs({ agilite_mod: 35    })}
+        if (values.agilite_actuel == 18)  { setAttrs({ agilite_mod: 40    })}
+        if (values.agilite_actuel == 19)  { setAttrs({ agilite_mod: 40    })}
+        if (values.agilite_actuel == 20)  { setAttrs({ agilite_mod: 45    })};
+    })});
+    
+    on("change:constitution_actuel", function() { getAttrs(["constitution_mod","constitution_actuel"], function(values) {
+        if (values.constitution_actuel == 1)   { setAttrs({ constitution_mod: -30   })}
+        if (values.constitution_actuel == 2)   { setAttrs({ constitution_mod: -20   })}
+        if (values.constitution_actuel == 3)   { setAttrs({ constitution_mod: -10   })}
+        if (values.constitution_actuel == 4)   { setAttrs({ constitution_mod: -5    })}
+        if (values.constitution_actuel == 5)   { setAttrs({ constitution_mod: 0     })}
+        if (values.constitution_actuel == 6)   { setAttrs({ constitution_mod: 5     })}
+        if (values.constitution_actuel == 7)   { setAttrs({ constitution_mod: 5     })}
+        if (values.constitution_actuel == 8)   { setAttrs({ constitution_mod: 10    })}
+        if (values.constitution_actuel == 9)   { setAttrs({ constitution_mod: 10    })}
+        if (values.constitution_actuel == 10)  { setAttrs({ constitution_mod: 15    })}
+        if (values.constitution_actuel == 11)  { setAttrs({ constitution_mod: 20    })}
+        if (values.constitution_actuel == 12)  { setAttrs({ constitution_mod: 20    })}
+        if (values.constitution_actuel == 13)  { setAttrs({ constitution_mod: 25    })}
+        if (values.constitution_actuel == 14)  { setAttrs({ constitution_mod: 25    })}
+        if (values.constitution_actuel == 15)  { setAttrs({ constitution_mod: 30    })}
+        if (values.constitution_actuel == 16)  { setAttrs({ constitution_mod: 35    })}
+        if (values.constitution_actuel == 17)  { setAttrs({ constitution_mod: 35    })}
+        if (values.constitution_actuel == 18)  { setAttrs({ constitution_mod: 40    })}
+        if (values.constitution_actuel == 19)  { setAttrs({ constitution_mod: 40    })}
+        if (values.constitution_actuel == 20)  { setAttrs({ constitution_mod: 45    })};
+    })});
+    
+    on("change:dexterite_actuel", function() { getAttrs(["dexterite_mod","dexterite_actuel"], function(values) {
+        if (values.dexterite_actuel == 1)   { setAttrs({ dexterite_mod: -30   })}
+        if (values.dexterite_actuel == 2)   { setAttrs({ dexterite_mod: -20   })}
+        if (values.dexterite_actuel == 3)   { setAttrs({ dexterite_mod: -10   })}
+        if (values.dexterite_actuel == 4)   { setAttrs({ dexterite_mod: -5    })}
+        if (values.dexterite_actuel == 5)   { setAttrs({ dexterite_mod: 0     })}
+        if (values.dexterite_actuel == 6)   { setAttrs({ dexterite_mod: 5     })}
+        if (values.dexterite_actuel == 7)   { setAttrs({ dexterite_mod: 5     })}
+        if (values.dexterite_actuel == 8)   { setAttrs({ dexterite_mod: 10    })}
+        if (values.dexterite_actuel == 9)   { setAttrs({ dexterite_mod: 10    })}
+        if (values.dexterite_actuel == 10)  { setAttrs({ dexterite_mod: 15    })}
+        if (values.dexterite_actuel == 11)  { setAttrs({ dexterite_mod: 20    })}
+        if (values.dexterite_actuel == 12)  { setAttrs({ dexterite_mod: 20    })}
+        if (values.dexterite_actuel == 13)  { setAttrs({ dexterite_mod: 25    })}
+        if (values.dexterite_actuel == 14)  { setAttrs({ dexterite_mod: 25    })}
+        if (values.dexterite_actuel == 15)  { setAttrs({ dexterite_mod: 30    })}
+        if (values.dexterite_actuel == 16)  { setAttrs({ dexterite_mod: 35    })}
+        if (values.dexterite_actuel == 17)  { setAttrs({ dexterite_mod: 35    })}
+        if (values.dexterite_actuel == 18)  { setAttrs({ dexterite_mod: 40    })}
+        if (values.dexterite_actuel == 19)  { setAttrs({ dexterite_mod: 40    })}
+        if (values.dexterite_actuel == 20)  { setAttrs({ dexterite_mod: 45    })};
+    })});
+    
+    on("change:force_actuel", function() { getAttrs(["force_mod","force_actuel"], function(values) {
+        if (values.force_actuel == 1)   { setAttrs({ force_mod: -30   })}
+        if (values.force_actuel == 2)   { setAttrs({ force_mod: -20   })}
+        if (values.force_actuel == 3)   { setAttrs({ force_mod: -10   })}
+        if (values.force_actuel == 4)   { setAttrs({ force_mod: -5    })}
+        if (values.force_actuel == 5)   { setAttrs({ force_mod: 0     })}
+        if (values.force_actuel == 6)   { setAttrs({ force_mod: 5     })}
+        if (values.force_actuel == 7)   { setAttrs({ force_mod: 5     })}
+        if (values.force_actuel == 8)   { setAttrs({ force_mod: 10    })}
+        if (values.force_actuel == 9)   { setAttrs({ force_mod: 10    })}
+        if (values.force_actuel == 10)  { setAttrs({ force_mod: 15    })}
+        if (values.force_actuel == 11)  { setAttrs({ force_mod: 20    })}
+        if (values.force_actuel == 12)  { setAttrs({ force_mod: 20    })}
+        if (values.force_actuel == 13)  { setAttrs({ force_mod: 25    })}
+        if (values.force_actuel == 14)  { setAttrs({ force_mod: 25    })}
+        if (values.force_actuel == 15)  { setAttrs({ force_mod: 30    })}
+        if (values.force_actuel == 16)  { setAttrs({ force_mod: 35    })}
+        if (values.force_actuel == 17)  { setAttrs({ force_mod: 35    })}
+        if (values.force_actuel == 18)  { setAttrs({ force_mod: 40    })}
+        if (values.force_actuel == 19)  { setAttrs({ force_mod: 40    })}
+        if (values.force_actuel == 20)  { setAttrs({ force_mod: 45    })};
+    })});
+    
+    on("change:intelligence_actuel", function() { getAttrs(["intelligence_mod","intelligence_actuel"], function(values) {
+        if (values.intelligence_actuel == 1)   { setAttrs({ intelligence_mod: -30   })}
+        if (values.intelligence_actuel == 2)   { setAttrs({ intelligence_mod: -20   })}
+        if (values.intelligence_actuel == 3)   { setAttrs({ intelligence_mod: -10   })}
+        if (values.intelligence_actuel == 4)   { setAttrs({ intelligence_mod: -5    })}
+        if (values.intelligence_actuel == 5)   { setAttrs({ intelligence_mod: 0     })}
+        if (values.intelligence_actuel == 6)   { setAttrs({ intelligence_mod: 5     })}
+        if (values.intelligence_actuel == 7)   { setAttrs({ intelligence_mod: 5     })}
+        if (values.intelligence_actuel == 8)   { setAttrs({ intelligence_mod: 10    })}
+        if (values.intelligence_actuel == 9)   { setAttrs({ intelligence_mod: 10    })}
+        if (values.intelligence_actuel == 10)  { setAttrs({ intelligence_mod: 15    })}
+        if (values.intelligence_actuel == 11)  { setAttrs({ intelligence_mod: 20    })}
+        if (values.intelligence_actuel == 12)  { setAttrs({ intelligence_mod: 20    })}
+        if (values.intelligence_actuel == 13)  { setAttrs({ intelligence_mod: 25    })}
+        if (values.intelligence_actuel == 14)  { setAttrs({ intelligence_mod: 25    })}
+        if (values.intelligence_actuel == 15)  { setAttrs({ intelligence_mod: 30    })}
+        if (values.intelligence_actuel == 16)  { setAttrs({ intelligence_mod: 35    })}
+        if (values.intelligence_actuel == 17)  { setAttrs({ intelligence_mod: 35    })}
+        if (values.intelligence_actuel == 18)  { setAttrs({ intelligence_mod: 40    })}
+        if (values.intelligence_actuel == 19)  { setAttrs({ intelligence_mod: 40    })}
+        if (values.intelligence_actuel == 20)  { setAttrs({ intelligence_mod: 45    })};
+    })});
+    
+    on("change:perception_actuel", function() { getAttrs(["perception_mod","perception_actuel"], function(values) {
+        if (values.perception_actuel == 1)   { setAttrs({ perception_mod: -30   })}
+        if (values.perception_actuel == 2)   { setAttrs({ perception_mod: -20   })}
+        if (values.perception_actuel == 3)   { setAttrs({ perception_mod: -10   })}
+        if (values.perception_actuel == 4)   { setAttrs({ perception_mod: -5    })}
+        if (values.perception_actuel == 5)   { setAttrs({ perception_mod: 0     })}
+        if (values.perception_actuel == 6)   { setAttrs({ perception_mod: 5     })}
+        if (values.perception_actuel == 7)   { setAttrs({ perception_mod: 5     })}
+        if (values.perception_actuel == 8)   { setAttrs({ perception_mod: 10    })}
+        if (values.perception_actuel == 9)   { setAttrs({ perception_mod: 10    })}
+        if (values.perception_actuel == 10)  { setAttrs({ perception_mod: 15    })}
+        if (values.perception_actuel == 11)  { setAttrs({ perception_mod: 20    })}
+        if (values.perception_actuel == 12)  { setAttrs({ perception_mod: 20    })}
+        if (values.perception_actuel == 13)  { setAttrs({ perception_mod: 25    })}
+        if (values.perception_actuel == 14)  { setAttrs({ perception_mod: 25    })}
+        if (values.perception_actuel == 15)  { setAttrs({ perception_mod: 30    })}
+        if (values.perception_actuel == 16)  { setAttrs({ perception_mod: 35    })}
+        if (values.perception_actuel == 17)  { setAttrs({ perception_mod: 35    })}
+        if (values.perception_actuel == 18)  { setAttrs({ perception_mod: 40    })}
+        if (values.perception_actuel == 19)  { setAttrs({ perception_mod: 40    })}
+        if (values.perception_actuel == 20)  { setAttrs({ perception_mod: 45    })};
+    })});
+    
+    on("change:pouvoir_actuel", function() { getAttrs(["pouvoir_mod","pouvoir_actuel"], function(values) {
+        if (values.pouvoir_actuel == 1)   { setAttrs({ pouvoir_mod: -30   })}
+        if (values.pouvoir_actuel == 2)   { setAttrs({ pouvoir_mod: -20   })}
+        if (values.pouvoir_actuel == 3)   { setAttrs({ pouvoir_mod: -10   })}
+        if (values.pouvoir_actuel == 4)   { setAttrs({ pouvoir_mod: -5    })}
+        if (values.pouvoir_actuel == 5)   { setAttrs({ pouvoir_mod: 0     })}
+        if (values.pouvoir_actuel == 6)   { setAttrs({ pouvoir_mod: 5     })}
+        if (values.pouvoir_actuel == 7)   { setAttrs({ pouvoir_mod: 5     })}
+        if (values.pouvoir_actuel == 8)   { setAttrs({ pouvoir_mod: 10    })}
+        if (values.pouvoir_actuel == 9)   { setAttrs({ pouvoir_mod: 10    })}
+        if (values.pouvoir_actuel == 10)  { setAttrs({ pouvoir_mod: 15    })}
+        if (values.pouvoir_actuel == 11)  { setAttrs({ pouvoir_mod: 20    })}
+        if (values.pouvoir_actuel == 12)  { setAttrs({ pouvoir_mod: 20    })}
+        if (values.pouvoir_actuel == 13)  { setAttrs({ pouvoir_mod: 25    })}
+        if (values.pouvoir_actuel == 14)  { setAttrs({ pouvoir_mod: 25    })}
+        if (values.pouvoir_actuel == 15)  { setAttrs({ pouvoir_mod: 30    })}
+        if (values.pouvoir_actuel == 16)  { setAttrs({ pouvoir_mod: 35    })}
+        if (values.pouvoir_actuel == 17)  { setAttrs({ pouvoir_mod: 35    })}
+        if (values.pouvoir_actuel == 18)  { setAttrs({ pouvoir_mod: 40    })}
+        if (values.pouvoir_actuel == 19)  { setAttrs({ pouvoir_mod: 40    })}
+        if (values.pouvoir_actuel == 20)  { setAttrs({ pouvoir_mod: 45    })};
+    })});
+
+    on("change:volonte_actuel", function() { getAttrs(["volonte_mod","volonte_actuel"], function(values) {
+        if (values.volonte_actuel == 1)   { setAttrs({ volonte_mod: -30   })}
+        if (values.volonte_actuel == 2)   { setAttrs({ volonte_mod: -20   })}
+        if (values.volonte_actuel == 3)   { setAttrs({ volonte_mod: -10   })}
+        if (values.volonte_actuel == 4)   { setAttrs({ volonte_mod: -5    })}
+        if (values.volonte_actuel == 5)   { setAttrs({ volonte_mod: 0     })}
+        if (values.volonte_actuel == 6)   { setAttrs({ volonte_mod: 5     })}
+        if (values.volonte_actuel == 7)   { setAttrs({ volonte_mod: 5     })}
+        if (values.volonte_actuel == 8)   { setAttrs({ volonte_mod: 10    })}
+        if (values.volonte_actuel == 9)   { setAttrs({ volonte_mod: 10    })}
+        if (values.volonte_actuel == 10)  { setAttrs({ volonte_mod: 15    })}
+        if (values.volonte_actuel == 11)  { setAttrs({ volonte_mod: 20    })}
+        if (values.volonte_actuel == 12)  { setAttrs({ volonte_mod: 20    })}
+        if (values.volonte_actuel == 13)  { setAttrs({ volonte_mod: 25    })}
+        if (values.volonte_actuel == 14)  { setAttrs({ volonte_mod: 25    })}
+        if (values.volonte_actuel == 15)  { setAttrs({ volonte_mod: 30    })}
+        if (values.volonte_actuel == 16)  { setAttrs({ volonte_mod: 35    })}
+        if (values.volonte_actuel == 17)  { setAttrs({ volonte_mod: 35    })}
+        if (values.volonte_actuel == 18)  { setAttrs({ volonte_mod: 40    })}
+        if (values.volonte_actuel == 19)  { setAttrs({ volonte_mod: 40    })}
+        if (values.volonte_actuel == 20)  { setAttrs({ volonte_mod: 45    })};
+    })});
+
+    on("change:mouvement_bonus", function() { getAttrs(["mouvement_bonus","distance_max","agilite_actuel"], function(values) {
+        var mouvement = Number(values.mouvement_bonus)+Number(values.agilite_actuel);
+        
+        if (mouvement < 1)   { setAttrs({ distance_max: "Moins d'un mètre par round"  })}
+        if (mouvement == 2)   { setAttrs({ distance_max: "4m par round"                })}
+        if (mouvement == 3)   { setAttrs({ distance_max: "8m par round"                })}
+        if (mouvement == 4)   { setAttrs({ distance_max: "15m par round"               })}
+        if (mouvement == 5)   { setAttrs({ distance_max: "20m par round"               })}
+        if (mouvement == 6)   { setAttrs({ distance_max: "22m par round"               })}
+        if (mouvement == 7)   { setAttrs({ distance_max: "25m par round"               })}
+        if (mouvement == 8)   { setAttrs({ distance_max: "28m par round"               })}
+        if (mouvement == 9)   { setAttrs({ distance_max: "32m par round"               })}
+        if (mouvement == 10)  { setAttrs({ distance_max: "35m par round"               })}
+        if (mouvement == 11)  { setAttrs({ distance_max: "40m par round (Surhumain)"   })}
+        if (mouvement == 12)  { setAttrs({ distance_max: "50m par round (Surhumain)"   })}
+        if (mouvement == 13)  { setAttrs({ distance_max: "80m par round (Surhumain)"   })}
+        if (mouvement == 14)  { setAttrs({ distance_max: "150m par round (Zen)"        })}
+        if (mouvement == 15)  { setAttrs({ distance_max: "250m par round (Zen)"        })}
+        if (mouvement == 16)  { setAttrs({ distance_max: "500m par round (Zen)"        })}
+        if (mouvement == 17)  { setAttrs({ distance_max: "1km par round (Zen)"         })}
+        if (mouvement == 18)  { setAttrs({ distance_max: "5km par round (Zen)"         })}
+        if (mouvement == 19)  { setAttrs({ distance_max: "25km par round (Zen)"        })}
+        if (mouvement > 20)  { setAttrs({ distance_max: "Spécial (Zen)"               })};
+    })});
+    
+    on("change:agilite_actuel", function() { getAttrs(["mouvement_bonus","distance_max","agilite_actuel"], function(values) {
+        var mouvement = Number(values.mouvement_bonus)+Number(values.agilite_actuel);
+        
+        if (mouvement < 1)   { setAttrs({ distance_max: "Moins d'un mètre par round"  })}
+        if (mouvement == 2)   { setAttrs({ distance_max: "4m par round"                })}
+        if (mouvement == 3)   { setAttrs({ distance_max: "8m par round"                })}
+        if (mouvement == 4)   { setAttrs({ distance_max: "15m par round"               })}
+        if (mouvement == 5)   { setAttrs({ distance_max: "20m par round"               })}
+        if (mouvement == 6)   { setAttrs({ distance_max: "22m par round"               })}
+        if (mouvement == 7)   { setAttrs({ distance_max: "25m par round"               })}
+        if (mouvement == 8)   { setAttrs({ distance_max: "28m par round"               })}
+        if (mouvement == 9)   { setAttrs({ distance_max: "32m par round"               })}
+        if (mouvement == 10)  { setAttrs({ distance_max: "35m par round"               })}
+        if (mouvement == 11)  { setAttrs({ distance_max: "40m par round (Surhumain)"   })}
+        if (mouvement == 12)  { setAttrs({ distance_max: "50m par round (Surhumain)"   })}
+        if (mouvement == 13)  { setAttrs({ distance_max: "80m par round (Surhumain)"   })}
+        if (mouvement == 14)  { setAttrs({ distance_max: "150m par round (Zen)"        })}
+        if (mouvement == 15)  { setAttrs({ distance_max: "250m par round (Zen)"        })}
+        if (mouvement == 16)  { setAttrs({ distance_max: "500m par round (Zen)"        })}
+        if (mouvement == 17)  { setAttrs({ distance_max: "1km par round (Zen)"         })}
+        if (mouvement == 18)  { setAttrs({ distance_max: "5km par round (Zen)"         })}
+        if (mouvement == 19)  { setAttrs({ distance_max: "25km par round (Zen)"        })}
+        if (mouvement > 20)  { setAttrs({ distance_max: "Spécial (Zen)"               })};
+    })});
+    
+    on("change:fatigue_bonus", function() { getAttrs(["fatigue_bonus","fatigue_malus","constitution_actuel"], function(values) {
+        var fatigue = Number(values.fatigue_bonus)+Number(values.constitution_actuel);
+        
+        if (fatigue < 1)   { setAttrs({ fatigue_malus: "-150 après la première perte de fatigue"  })}
+        if (fatigue == 2)   { setAttrs({ fatigue_malus: "-80 après la première perte de fatigue"   })}
+        if (fatigue == 3)   { setAttrs({ fatigue_malus: "-40 après la première perte de fatigue"   })}
+        if (fatigue == 4)   { setAttrs({ fatigue_malus: "-10 après la première perte de fatigue"   })}
+        if (fatigue > 4)   { setAttrs({ fatigue_malus: ""   })}
+    })});
+    
+    on("change:constitution_actuel", function() { getAttrs(["fatigue_bonus","fatigue_malus","constitution_actuel"], function(values) {
+        var fatigue = Number(values.fatigue_bonus)+Number(values.constitution_actuel);
+        
+        if (fatigue < 1)   { setAttrs({ fatigue_malus: "-150 après la première perte de fatigue"  })}
+        if (fatigue == 2)   { setAttrs({ fatigue_malus: "-80 après la première perte de fatigue"   })}
+        if (fatigue == 3)   { setAttrs({ fatigue_malus: "-40 après la première perte de fatigue"   })}
+        if (fatigue == 4)   { setAttrs({ fatigue_malus: "-10 après la première perte de fatigue"   })}
+        if (fatigue > 4)   { setAttrs({ fatigue_malus: ""   })}
+    })});
+    
+    on("change:constitution_actuel", function() { getAttrs(["constitution_actuel","pv_base2"], function(values) {
+        var constitution = values.constitution_actuel;
+        var pv           = values.pv_base2;
+        
+        if (constitution == 1)   { setAttrs({ pv_base2: 5   })}
+        if (constitution == 2)   { setAttrs({ pv_base2: 20  })}
+        if (constitution == 3)   { setAttrs({ pv_base2: 40  })}
+        if (constitution == 4)   { setAttrs({ pv_base2: 55  })}
+        if (constitution == 5)   { setAttrs({ pv_base2: 70  })}
+        if (constitution == 6)   { setAttrs({ pv_base2: 85  })}
+        if (constitution == 7)   { setAttrs({ pv_base2: 95  })}
+        if (constitution == 8)   { setAttrs({ pv_base2: 110 })}
+        if (constitution == 9)   { setAttrs({ pv_base2: 120 })}
+        if (constitution == 10)  { setAttrs({ pv_base2: 135 })}
+        if (constitution == 11)  { setAttrs({ pv_base2: 150 })}
+        if (constitution == 12)  { setAttrs({ pv_base2: 160 })}
+        if (constitution == 13)  { setAttrs({ pv_base2: 175 })}
+        if (constitution == 14)  { setAttrs({ pv_base2: 185 })}
+        if (constitution == 15)  { setAttrs({ pv_base2: 200 })}
+        if (constitution == 16)  { setAttrs({ pv_base2: 215 })}
+        if (constitution == 17)  { setAttrs({ pv_base2: 225 })}
+        if (constitution == 18)  { setAttrs({ pv_base2: 240 })}
+        if (constitution == 19)  { setAttrs({ pv_base2: 250 })}
+        if (constitution == 20)  { setAttrs({ pv_base2: 265 })};
+    })});
+    
+    on("change:pouvoir_actuel", function() { getAttrs(["pouvoir_actuel","zeon_base2"], function(values) {
+        var constitution = values.pouvoir_actuel;
+        var pv           = values.zeon_base2;
+        
+        if (constitution == 1)   { setAttrs({ zeon_base2: 5   })}
+        if (constitution == 2)   { setAttrs({ zeon_base2: 20  })}
+        if (constitution == 3)   { setAttrs({ zeon_base2: 40  })}
+        if (constitution == 4)   { setAttrs({ zeon_base2: 55  })}
+        if (constitution == 5)   { setAttrs({ zeon_base2: 70  })}
+        if (constitution == 6)   { setAttrs({ zeon_base2: 85  })}
+        if (constitution == 7)   { setAttrs({ zeon_base2: 95  })}
+        if (constitution == 8)   { setAttrs({ zeon_base2: 110 })}
+        if (constitution == 9)   { setAttrs({ zeon_base2: 120 })}
+        if (constitution == 10)  { setAttrs({ zeon_base2: 135 })}
+        if (constitution == 11)  { setAttrs({ zeon_base2: 150 })}
+        if (constitution == 12)  { setAttrs({ zeon_base2: 160 })}
+        if (constitution == 13)  { setAttrs({ zeon_base2: 175 })}
+        if (constitution == 14)  { setAttrs({ zeon_base2: 185 })}
+        if (constitution == 15)  { setAttrs({ zeon_base2: 200 })}
+        if (constitution == 16)  { setAttrs({ zeon_base2: 215 })}
+        if (constitution == 17)  { setAttrs({ zeon_base2: 225 })}
+        if (constitution == 18)  { setAttrs({ zeon_base2: 240 })}
+        if (constitution == 19)  { setAttrs({ zeon_base2: 250 })}
+        if (constitution == 20)  { setAttrs({ zeon_base2: 265 })};
+    })});
+    
+    on("change:pouvoir_actuel", function() { getAttrs(["pouvoir_actuel","amr_base2"], function(values) {
+        var constitution = values.pouvoir_actuel;
+        var pv           = values.amr_base2;
+        
+        if (constitution == 1)   { setAttrs({ amr_base2: 0  })}
+        if (constitution == 2)   { setAttrs({ amr_base2: 0  })}
+        if (constitution == 3)   { setAttrs({ amr_base2: 0  })}
+        if (constitution == 4)   { setAttrs({ amr_base2: 0  })}
+        if (constitution == 5)   { setAttrs({ amr_base2: 5  })}
+        if (constitution == 6)   { setAttrs({ amr_base2: 5  })}
+        if (constitution == 7)   { setAttrs({ amr_base2: 5  })}
+        if (constitution == 8)   { setAttrs({ amr_base2: 10 })}
+        if (constitution == 9)   { setAttrs({ amr_base2: 10 })}
+        if (constitution == 10)  { setAttrs({ amr_base2: 10 })}
+        if (constitution == 11)  { setAttrs({ amr_base2: 10 })}
+        if (constitution == 12)  { setAttrs({ amr_base2: 15 })}
+        if (constitution == 13)  { setAttrs({ amr_base2: 15 })}
+        if (constitution == 14)  { setAttrs({ amr_base2: 15 })}
+        if (constitution == 15)  { setAttrs({ amr_base2: 20 })}
+        if (constitution == 16)  { setAttrs({ amr_base2: 25 })}
+        if (constitution == 17)  { setAttrs({ amr_base2: 25 })}
+        if (constitution == 18)  { setAttrs({ amr_base2: 30 })}
+        if (constitution == 19)  { setAttrs({ amr_base2: 30 })}
+        if (constitution == 20)  { setAttrs({ amr_base2: 35 })};
+    })});
+    
+    on("change:force_actuel", function() { getAttrs(["force_actuel","for_accumulation_par_tour2"], function(values) {
+        var attribut = values.force_actuel;
+        
+        if (attribut <= 9)                          { setAttrs({ for_accumulation_par_tour2: 1  })}
+        if ((attribut >= 10) && (attribut <= 12))   { setAttrs({ for_accumulation_par_tour2: 2  })}
+        if ((attribut >= 13) && (attribut <= 15))   { setAttrs({ for_accumulation_par_tour2: 3  })}
+        if (attribut >= 16)                         { setAttrs({ for_accumulation_par_tour2: 4  })};
+    })});
+    
+    on("change:dexterite_actuel", function() { getAttrs(["dexterite_actuel","dex_accumulation_par_tour2"], function(values) {
+        var attribut = values.dexterite_actuel;
+        
+        if (attribut <= 9)                          { setAttrs({ dex_accumulation_par_tour2: 1  })}
+        if ((attribut >= 10) && (attribut <= 12))   { setAttrs({ dex_accumulation_par_tour2: 2  })}
+        if ((attribut >= 13) && (attribut <= 15))   { setAttrs({ dex_accumulation_par_tour2: 3  })}
+        if (attribut >= 16)                         { setAttrs({ dex_accumulation_par_tour2: 4  })};
+    })});
+    
+    on("change:agilite_actuel", function() { getAttrs(["agilite_actuel","agi_accumulation_par_tour2"], function(values) {
+        var attribut = values.agilite_actuel;
+        
+        if (attribut <= 9)                          { setAttrs({ agi_accumulation_par_tour2: 1  })}
+        if ((attribut >= 10) && (attribut <= 12))   { setAttrs({ agi_accumulation_par_tour2: 2  })}
+        if ((attribut >= 13) && (attribut <= 15))   { setAttrs({ agi_accumulation_par_tour2: 3  })}
+        if (attribut >= 16)                         { setAttrs({ agi_accumulation_par_tour2: 4  })};
+    })});
+    
+    on("change:constitution_actuel", function() { getAttrs(["constitution_actuel","con_accumulation_par_tour2"], function(values) {
+        var attribut = values.constitution_actuel;
+        
+        if (attribut <= 9)                          { setAttrs({ con_accumulation_par_tour2: 1  })}
+        if ((attribut >= 10) && (attribut <= 12))   { setAttrs({ con_accumulation_par_tour2: 2  })}
+        if ((attribut >= 13) && (attribut <= 15))   { setAttrs({ con_accumulation_par_tour2: 3  })}
+        if (attribut >= 16)                         { setAttrs({ con_accumulation_par_tour2: 4  })};
+    })});
+    
+    on("change:pouvoir_actuel", function() { getAttrs(["pouvoir_actuel","pou_accumulation_par_tour2"], function(values) {
+        var attribut = values.pouvoir_actuel;
+        
+        if (attribut <= 9)                          { setAttrs({ pou_accumulation_par_tour2: 1  })}
+        if ((attribut >= 10) && (attribut <= 12))   { setAttrs({ pou_accumulation_par_tour2: 2  })}
+        if ((attribut >= 13) && (attribut <= 15))   { setAttrs({ pou_accumulation_par_tour2: 3  })}
+        if (attribut >= 16)                         { setAttrs({ pou_accumulation_par_tour2: 4  })};
+    })});
+    
+    on("change:volonte_actuel", function() { getAttrs(["volonte_actuel","vol_accumulation_par_tour2"], function(values) {
+        var attribut = values.volonte_actuel;
+        
+        if (attribut <= 9)                          { setAttrs({ vol_accumulation_par_tour2: 1  })}
+        if ((attribut >= 10) && (attribut <= 12))   { setAttrs({ vol_accumulation_par_tour2: 2  })}
+        if ((attribut >= 13) && (attribut <= 15))   { setAttrs({ vol_accumulation_par_tour2: 3  })}
+        if (attribut >= 16)                         { setAttrs({ vol_accumulation_par_tour2: 4  })};
+    })});
+    
+    
+</script>
