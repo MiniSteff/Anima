@@ -1,0 +1,1158 @@
+ <!-- Sur le pouvoir --><img src="" class="sheet-logo">
+
+<input type="radio" name="attr_onglet1" value="personnage" checked><p class="sheet-p_3">Personnage</p>
+<input type="radio" name="attr_onglet1" value="statistiques"><p class="sheet-p_3">Statistique</p>
+<input type="radio" name="attr_onglet1" value="caracteristiques"><p class="sheet-p_3">Caractéristique</p>
+<input type="radio" name="attr_onglet1" value="competences"><p class="sheet-p_3">Competence</p>
+<input type="radio" name="attr_onglet1" value="equipements"><p class="sheet-p_3">Équipements</p>
+<input type="radio" name="attr_onglet1" value="ki"><p class="sheet-p_3">Ki</p>
+<input type="radio" name="attr_onglet1" value="magie"><p class="sheet-p_3">Magie</p>
+
+<!-- INFORMATIONS ------------------------------------------------------------->
+
+<div class="sheet-div1 sheet-personnage">
+    <p class="sheet-titre1">Personnage</p>
+    <p class="sheet-titre2">"Naître, c'est seulement commencer à mourir" - Théophile Gauthier</p>
+    
+    <p class="sheet-w70">Nom :</p><input type="text" class="sheet-w300" name="attr_nom" placeholder="..........">
+    <p class="sheet-w50">Race :</p><input type="text" class="sheet-w150" name="attr_race" placeholder="..........">
+    <p class="sheet-w60">Origine :</p><input type="text" class="sheet-w150" name="attr_origine" placeholder=".........."><br>
+    
+    <p class="sheet-w70">Genre :</p><input type="text" class="sheet-w300" name="attr_genre" placeholder="..........">
+    <p class="sheet-w50">Âge :</p><input type="text" class="sheet-w300" name="attr_age" placeholder=".........."><br>
+    
+    <p class="sheet-w70">Cheveux :</p><input type="text" class="sheet-w300" name="attr_cheveux" placeholder="..........">
+    <p class="sheet-w50">Yeux :</p><input type="text" class="sheet-w300" name="attr_yeux" placeholder=".........."><br>
+    
+    <p class="sheet-w70">Taille :</p><input type="text" class="sheet-w300" name="attr_taille" placeholder="..........">
+    <p class="sheet-w50">Poids :</p><input type="text" class="sheet-w300" name="attr_poids" placeholder=".........."><br>
+</div>
+<!----------------------------------------------------------------------------->
+
+
+
+<!-- MAGIE ------------------------------------------------------------->
+
+<div class="sheet-div1 sheet-magie">
+    <p class="sheet-titre1">Magie</p>
+    <p class="sheet-titre2">"..." - ...</p>
+    
+    <p class="sheet-w190"></p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2"> Spécial</p>
+    <p class="sheet-w100 sheet-p_2"> Déséquilibre</p>
+    <p class="sheet-w60 sheet-p_2"> Total</p><br>
+    
+    
+    <button type="roll" value="0"></button>
+    <p class="sheet-w150">Projection offensive</p>
+    <input type="number" name="attr_pro_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pro_spec" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pro_off_dese" value="0" class="sheet-w100 sheet-number1">
+    <input type="number" name="attr_pro_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0"></button>
+    <p class="sheet-w150">Projection défensive</p>
+    <input type="number" name="attr_pro_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pro_spec" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pro_def_dese" value="0" class="sheet-w100 sheet-number1">
+    <input type="number" name="attr_pro_total" value="0" class="sheet-w60 sheet-number1" disabled><br><br>
+    
+    <p class="sheet-w190"></p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2"> Bonus</p>
+    <p class="sheet-w60 sheet-p_2"> Classe</p>
+    <p class="sheet-w60 sheet-p_2"> Total</p><br>
+    
+    
+    <button type="roll" value="0"></button>
+    <p class="sheet-w150">Convoquer</p>
+    <input type="number" name="attr_conv_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_conv_spec" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_conv_off_dese" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_conv_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0"></button>
+    <p class="sheet-w150">Dominer</p>
+    <input type="number" name="attr_domi_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_domi_spec" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_domi_off_dese" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_domi_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0"></button>
+    <p class="sheet-w150">Lier</p>
+    <input type="number" name="attr_lier_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_lier_spec" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_lier_off_dese" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_lier_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0"></button>
+    <p class="sheet-w150">Révoquer</p>
+    <input type="number" name="attr_revo_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_revo_spec" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_revo_off_dese" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_revo_total" value="0" class="sheet-w60 sheet-number1" disabled><br><br>
+    
+    <p class="sheet-w150"></p>
+    <p class="sheet-w60 sheet-p_2"> Actuel</p>
+    <p class="sheet-w60 sheet-p_2"> Total</p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2"> Bonus</p>
+    <p class="sheet-w100 sheet-p_2"> Multiplicateur</p><br>
+    
+    <p class="sheet-w150">AMR</p>
+    <input type="number" name="attr_amr_actuel" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_amr_total" value="0" class="sheet-w60 sheet-number1" disabled>              <!-- (Base*multi)+bonus -->
+    <input type="number" name="attr_amr_base" value="0" class="sheet-w60 sheet-number1" disabled>               <!-- Se base sur le pouvoir -->
+    <input type="number" name="attr_amr_bonu" value="0" class="sheet-w60 sheet-number1">                        <!-- S'ajoute au total -->
+    <input type="number" name="attr_amr_mult" value="1" class="sheet-w100 sheet-number1"><br>                   <!-- Multiplie la base -->
+    
+    <p class="sheet-w150">Zéon</p>
+    <input type="number" name="attr_zeon_actuel" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_zeon_total" value="0" class="sheet-w60 sheet-number1" disabled>              <!-- -->
+    <input type="number" name="attr_zeon_base" value="0" class="sheet-w60 sheet-number1" disabled>               <!-- -->
+    <input type="number" name="attr_zeon_bonu" value="0" class="sheet-w60 sheet-number1">                        <!-- -->
+    <p class="sheet-w100 sheet-p_2"> - </p><br><br>
+    
+    
+    <p class="sheet-w100">Essence</p><input type="number" name="attr_essence" class="sheet-w60 sheet-number1" value="0">
+    <p class="sheet-w100">Illusion</p><input type="number" name="attr_ullusion" class="sheet-w60 sheet-number1" value="0">
+    
+    <p class="sheet-w100">Création</p><input type="number" name="attr_creation" class="sheet-w60 sheet-number1" value="0">
+    <p class="sheet-w100">Destruction</p><input type="number" name="attr_destruction" class="sheet-w60 sheet-number1" value="0"><br>
+
+    <p class="sheet-w100">Obscurité</p><input type="number" name="attr_obscurite" class="sheet-w60 sheet-number1" value="0">
+    <p class="sheet-w100">Lumière</p><input type="number" name="attr_lumiere" class="sheet-w60 sheet-number1" value="0">
+
+    <p class="sheet-w100">Eau</p><input type="number" name="attr_eau" class="sheet-w60 sheet-number1" value="0">
+    <p class="sheet-w100">Terre</p><input type="number" name="attr_terre" class="sheet-w60 sheet-number1" value="0"><br>
+
+    <p class="sheet-w100">Air</p><input type="number" name="attr_air" class="sheet-w60 sheet-number1" value="0">
+    <p class="sheet-w100">Feu</p><input type="number" name="attr_feu" class="sheet-w60 sheet-number1" value="0">
+
+    <p class="sheet-w100">Nécromancie</p><input type="number" name="attr_necromancie" class="sheet-w60 sheet-number1" value="0">
+    
+</div>
+<!----------------------------------------------------------------------------->
+
+
+
+<!-- STATISTIQUES ------------------------------------------------------------->
+
+<div class="sheet-div1 sheet-statistiques">
+    <p class="sheet-titre1">Statistiques</p>
+    <p class="sheet-titre2">"Vous tous les hommes, nous sommes fait du même argile, mais pas du même moule" - Trinidad</p>
+    
+    <p class="sheet-w70">Classe :</p><input type="text" name="attr_classe" placeholder=".........." class="sheet-w500"><br>
+    <p class="sheet-w100">Niveau :</p><input type="number" name="attr_niveau" value="1" class="sheet-w30"><br>
+    <p class="sheet-w100">Port d'armure :</p><input type="number" name="attr_armure" class="sheet-w30" value="0"><br>
+    <p class="sheet-w100">Apparence :</p><input type="number" name="attr_armure" class="sheet-w30" value="0"><br><br>
+    
+    <p class="sheet-w150"></p>
+    <p class="sheet-w60 sheet-p_2"> Actuel</p>
+    <p class="sheet-w60 sheet-p_2"> Total</p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2"> Bonus</p>
+    <p class="sheet-w60 sheet-p_2"> Classe</p>
+    <p class="sheet-w60 sheet-p_2"> N. Multi</p>
+    <p class="sheet-w60 sheet-p_2"> Multi</p><br>
+    
+    <p class="sheet-w150">Point de vie</p>
+    <input type="number" name="attr_pdv_actuel" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pdv_total" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_pdv_base" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_pdv_bonus" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pdv_classe" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pdv_nmulti" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pdv_multi" value="0" class="sheet-w60 sheet-number1"><br>
+    
+    <p class="sheet-w150">Zéon</p>
+    <input type="number" name="attr_zeon_actuel" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_zeon_total" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_zeon_base" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_zeon_bonus" value="0" class="sheet-w60 sheet-number1">
+    <p class="sheet-w60 sheet-p_2">-</p>
+    <p class="sheet-w60 sheet-p_2">-</p>
+    <p class="sheet-w60 sheet-p_2">-</p><br>
+    
+    <p class="sheet-w150">AMR</p>
+    <input type="number" name="attr_amr_actuel" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_amr_total" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_amr_base" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_amr_bonus" value="0" class="sheet-w60 sheet-number1">
+    <p class="sheet-w60 sheet-p_2">-</p>
+    <input type="number" name="attr_amr_nmulti" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_amr_multi" value="0" class="sheet-w60 sheet-number1"><br><br>
+    
+    <p class="sheet-w150"></p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2"> Bonus</p>
+    <p class="sheet-w60 sheet-p_2"> Total</p><br>
+    
+    <p class="sheet-w150">Mouvement</p>
+    <input type="number" name="attr_mvt_base" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_mvt_bonus" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_mvt_total" value="0" class="sheet-w60 sheet-number1" disabled>
+    <p name="attr_mvt1"></p><br>
+    
+    <p class="sheet-w150">Fatigue</p>
+    <input type="number" name="attr_fatigue_base" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_fatigue_bonus" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_fatigue_total" value="0" class="sheet-w60 sheet-number1" disabled>
+    <p name="attr_fatigue"></p><br>
+</div>
+<!----------------------------------------------------------------------------->
+
+
+
+<!-- CARACTERISTIQUES --------------------------------------------------------->
+
+<div class="sheet-div1 sheet-caracteristiques">
+    <p class="sheet-titre1">Caractéristiques</p>
+    <p class="sheet-titre2">"Tout le monde croit qu'avoir du talent est une question de chance; personne ne pense que la chance puisse être une question de talent" - Jacinto Benavente</p>
+
+    <p class="sheet-w130"></p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2"> Actuel</p>
+    <p class="sheet-w60 sheet-p_2"> Mod</p><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Agilité</p>
+    <input type="number" name="attr_agi_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_agi_actuel" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_agi_mod" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Constitution</p>
+    <input type="number" name="attr_con_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_con_actuel" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_con_mod" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Dextérité</p>
+    <input type="number" name="attr_dex_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_dex_actuel" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_dex_mod" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Force</p>
+    <input type="number" name="attr_for_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_for_actuel" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_for_mod" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Intelligence</p>
+    <input type="number" name="attr_int_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_int_actuel" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_int_mod" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Perception</p>
+    <input type="number" name="attr_per_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_per_actuel" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_per_mod" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Pouvoir</p>
+    <input type="number" name="attr_pou_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pou_actuel" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pou_mod" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Volonté</p>
+    <input type="number" name="attr_vol_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_vol_actuel" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_vol_mod" value="0" class="sheet-w60 sheet-number1" disabled><br><br>
+    
+    
+    <p class="sheet-w190"></p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2"> Mod.</p>
+    <p class="sheet-w60 sheet-p_2"> Spec.</p>
+    <p class="sheet-w60 sheet-p_2"> Total</p><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Présence</p>
+    <p class="sheet-w50">NIV</p>
+    <input type="number" name="attr_presence_base" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_presence_mod" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_presence_spec" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_presence_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Pysique</p>
+    <p class="sheet-w50">CON</p>
+    <input type="number" name="attr_physique_base" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_physique_mod" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_physique_spec" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_physique_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Maladies</p>
+    <p class="sheet-w50">CON</p>
+    <input type="number" name="attr_maladies_base" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_maladies_mod" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_maladies_spec" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_maladies_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Poisons</p>
+    <p class="sheet-w50">CON</p>
+    <input type="number" name="attr_poisons_base" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_poisons_mod" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_poisons_spec" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_poisons_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Pouvoir</p>
+    <p class="sheet-w50">POU</p>
+    <input type="number" name="attr_pouvoir_base" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_pouvoir_mod" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_pouvoir_spec" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pouvoir_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value=""></button>
+    <p class="sheet-w100">Psychique</p>
+    <p class="sheet-w50">VOL</p>
+    <input type="number" name="attr_psychique_base" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_psychique_mod" value="0" class="sheet-w60 sheet-number1" disabled>
+    <input type="number" name="attr_psychique_spec" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_psychique_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+</div>
+<!----------------------------------------------------------------------------->
+
+
+
+<!-- COMPETENCES -------------------------------------------------------------->
+
+<div class="sheet-div1 sheet-competences">
+    <p class="sheet-titre1">Compétences</p>
+    <p class="sheet-titre2">"La personne qui ne fait pas de bétise ne fera jamais rien d'intéressant" - Grant</p>
+    
+    <input type="checkbox" name="attr_display1" value="0"><p class="sheet-p_3">Statistiques avancées</p><br>
+    <p class="sheet-p_1">(*) Compétences sujette au malus d'armure</p><br><br>
+    
+    <p class="sheet-titre3">Atlétique</p>
+    <p class="sheet-w240"></p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Spec.</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Classe</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus N.</p>
+    <p class="sheet-w60 sheet-p_2"> Total</p><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">* Acrobatie</p>
+    <p class="sheet-w50">AGI</p>
+    <input type="number" name="attr_acr_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_acr_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_acr_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_acr_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_acr_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_acr_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">* Athlétisme</p>
+    <p class="sheet-w50">AGI</p>
+    <input type="number" name="attr_ath_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_ath_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_ath_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_ath_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_ath_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_ath_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Équitation</p>
+    <p class="sheet-w50">AGI</p>
+    <input type="number" name="attr_equ_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_equ_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_equ_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_equ_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_equ_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_equ_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">* Escalade</p>
+    <p class="sheet-w50">AGI</p>
+    <input type="number" name="attr_esc_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_esc_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_esc_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_esc_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_esc_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_esc_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Natation</p>
+    <p class="sheet-w50">AGI</p>
+    <input type="number" name="attr_nat_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_nat_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_nat_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_nat_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_nat_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_nat_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">* Saut</p>
+    <p class="sheet-w50">FOR</p>
+    <input type="number" name="attr_sau_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_sau_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_sau_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_sau_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_sau_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_sau_total" value="0" class="sheet-w60 sheet-number1" disabled><br><br>
+    
+    
+    <p class="sheet-titre3">Vitales</p>
+    <p class="sheet-w240"></p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Spec.</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Classe</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus N.</p>
+    <p class="sheet-w60 sheet-p_2"> Total</p><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Impassibilité</p>
+    <p class="sheet-w50">VOL</p>
+    <input type="number" name="attr_imp_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_imp_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_imp_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_imp_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_imp_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_imp_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Prouesse de force</p>
+    <p class="sheet-w50">FOR</p>
+    <input type="number" name="attr_pro_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pro_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_pro_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_pro_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_pro_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_pro_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Résistance à la douleur</p>
+    <p class="sheet-w50">VOL</p>
+    <input type="number" name="attr_res_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_res_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_res_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_res_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_res_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_res_total" value="0" class="sheet-w60 sheet-number1" disabled><br><br>
+    
+    
+    <p class="sheet-titre3">Sensorielles</p>
+    <p class="sheet-w240"></p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Spec.</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Classe</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus N.</p>
+    <p class="sheet-w60 sheet-p_2"> Total</p><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Observation</p>
+    <p class="sheet-w50">PER</p>
+    <input type="number" name="attr_obs_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_obs_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_obs_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_obs_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_obs_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_obs_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Pistage</p>
+    <p class="sheet-w50">PER</p>
+    <input type="number" name="attr_pis_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pis_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_pis_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_pis_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_pis_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_pis_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Vigilance</p>
+    <p class="sheet-w50">PER</p>
+    <input type="number" name="attr_vig_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_vig_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_vig_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_vig_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_vig_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_vig_total" value="0" class="sheet-w60 sheet-number1" disabled><br><br>
+    
+    
+    <p class="sheet-titre3">Intellectuelles</p>
+    <p class="sheet-w240"></p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Spec.</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Classe</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus N.</p>
+    <p class="sheet-w60 sheet-p_2"> Total</p><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Animaux</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_ani_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_ani_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_ani_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_ani_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_ani_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_ani_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Estimation</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_est_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_est_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_est_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_est_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_est_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_est_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Évaluation magique</p>
+    <p class="sheet-w50">POU</p>
+    <input type="number" name="attr_eva_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_eva_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_eva_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_eva_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_eva_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_eva_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Herboristerie</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_her_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_her_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_her_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_her_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_her_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_her_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Loi</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_loi_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_loi_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_loi_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_loi_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_loi_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_loi_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Médecine</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_med_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_med_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_med_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_med_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_med_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_med_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Mémorisation</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_mem_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_mem_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_mem_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_mem_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_mem_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_mem_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Navigation</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_nav_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_nav_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_nav_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_nav_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_nav_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_nav_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Occultisme</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_occ_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_occ_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_occ_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_occ_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_occ_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_occ_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Science</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_sci_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_sci_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_sci_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_sci_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_sci_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_sci_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Tactique</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_tac_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_tac_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_tac_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_tac_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_tac_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_tac_total" value="0" class="sheet-w60 sheet-number1" disabled><br><br>
+    
+    
+    <p class="sheet-titre3">Sociales</p>
+    <p class="sheet-w240"></p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Spec.</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Classe</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus N.</p>
+    <p class="sheet-w60 sheet-p_2"> Total</p><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Commandement</p>
+    <p class="sheet-w50">POU</p>
+    <input type="number" name="attr_com_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_com_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_com_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_com_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_com_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_com_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Commerçe</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_com2_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_com2_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_com2_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_com2_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_com2_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_com2_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Connaissance de la rue</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_con2_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_con2_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_con2_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1 sheet-display1">
+    <input type="number" name="attr_con2_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1 sheet-display1">
+    <input type="number" name="attr_con2_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1 sheet-display1">
+    <input type="number" name="attr_con2_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Étiquette</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_eti_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_eti_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_eti_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_eti_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_eti_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_eti_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Intimidation</p>
+    <p class="sheet-w50">VOL</p>
+    <input type="number" name="attr_int_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_int_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_int_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_int_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_int_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_int_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Persuasion</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_per2_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_per2_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_per2_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_per2_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_per2_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_per2_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Style</p>
+    <p class="sheet-w50">POU</p>
+    <input type="number" name="attr_sty_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_sty_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_sty_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_sty_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_sty_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_sty_total" value="0" class="sheet-w60 sheet-number1" disabled><br><br>
+    
+    
+    <p class="sheet-titre3">Clandestines</p>
+    <p class="sheet-w240"></p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Spec.</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Classe</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus N.</p>
+    <p class="sheet-w60 sheet-p_2"> Total</p><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">* Camouflage</p>
+    <p class="sheet-w50">PER</p>
+    <input type="number" name="attr_cam_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_cam_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_cam_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_cam_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_cam_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_cam_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Crochetage</p>
+    <p class="sheet-w50">DEX</p>
+    <input type="number" name="attr_cro_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_cro_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_cro_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_cro_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_cro_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_cro_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Déguisement</p>
+    <p class="sheet-w50">DEX</p>
+    <input type="number" name="attr_deg_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_deg_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_deg_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_deg_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_deg_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_deg_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Discrétion</p>
+    <p class="sheet-w50">AGI</p>
+    <input type="number" name="attr_dis_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_dis_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_dis_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_dis_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_dis_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_dis_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Larcin</p>
+    <p class="sheet-w50">DEX</p>
+    <input type="number" name="attr_lar_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_lar_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_lar_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_lar_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_lar_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_lar_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Pièges</p>
+    <p class="sheet-w50">DEX</p>
+    <input type="number" name="attr_pie_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_pie_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_pie_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_pie_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_pie_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_pie_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Poison</p>
+    <p class="sheet-w50">INT</p>
+    <input type="number" name="attr_poi_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_poi_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_poi_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_poi_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_poi_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_poi_total" value="0" class="sheet-w60 sheet-number1" disabled><br><br>
+    
+    
+    <p class="sheet-titre3">Créatives</p>
+    <p class="sheet-w240"></p>
+    <p class="sheet-w60 sheet-p_2"> Base</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Spec.</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Classe</p>
+    <p class="sheet-w60 sheet-p_2 sheet-display1"> Bonus N.</p>
+    <p class="sheet-w60 sheet-p_2"> Total</p><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Art</p>
+    <p class="sheet-w50">POU</p>
+    <input type="number" name="attr_art_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_art_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_art_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_art_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_art_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_art_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">* Danse</p>
+    <p class="sheet-w50">AGI</p>
+    <input type="number" name="attr_danse_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_danse_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_danse_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_danse_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_danse_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_danse_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Forge</p>
+    <p class="sheet-w50">DEX</p>
+    <input type="number" name="attr_for2_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_for2_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_for2_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_for2_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_for2_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_for2_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Habileté Manuelle</p>
+    <p class="sheet-w50">DEX</p>
+    <input type="number" name="attr_hab_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_hab_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_hab_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_hab_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_hab_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_hab_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+    
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150">Musique</p>
+    <p class="sheet-w50">DEX</p>
+    <input type="number" name="attr_mus_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_mus_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_mus_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_mus_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_mus_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_mus_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+<!--
+    <button type="roll" value="0" ></button>
+    <p class="sheet-w150"></p>
+    <p class="sheet-w50"></p>
+    <input type="number" name="attr_base" value="0" class="sheet-w60 sheet-number1">
+    <input type="number" name="attr_bonus" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_spec" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_classe" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_bonusn" value="0" class="sheet-w60 sheet-number1 sheet-display1">
+    <input type="number" name="attr_total" value="0" class="sheet-w60 sheet-number1" disabled><br>
+-->
+</div>
+<!----------------------------------------------------------------------------->
+
+
+
+<!-- ÉQUIPEMENTS -------------------------------------------------------------->
+
+<div class="sheet-div1 sheet-equipements">
+    <p class="sheet-titre1">Équipements</p>
+    <p class="sheet-titre2">"..." - ...</p>
+    
+    <p class="sheet-titre3">Armes</p>
+    
+    <fieldset class="repeating_arme">
+        <button type="roll" value="0"></button><input type="text" name="attr_arme_nom" placeholder=".........." class="sheet-w600 sheet-s18"><br>
+        
+        <p class="sheet-w100">Dégâts :</p><input type="number" name="attr_arme_deg" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Vitesse :</p><input type="number" name="attr_arme_vit" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Force Requise :</p><input type="number" name="attr_arme_for" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w60">Mode 1 :</p><input type="text" name="attr_arme_mod1" placeholder=".........." class="sheet-w50"><br>
+        
+        <p class="sheet-w100">Solidité :</p><input type="number" name="attr_arme_sol" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Fracassement :</p><input type="number" name="attr_arme_fra" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Présence :</p><input type="number" name="attr_arme_pre" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w60">Mode 2 :</p><input type="text" name="attr_arme_mod2" placeholder=".........." class="sheet-w50"><br>
+        
+        <p class="sheet-w100">Bonus 1 :</p><input type="number" name="attr_arme_bon1" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Bonus 2 :</p><input type="number" name="attr_arme_bon2" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Bonus 3 :</p><input type="number" name="attr_arme_bon3" value="0" class="sheet-w50 sheet-number1"><br>
+        
+        <p class="sheet-w70">Catégorie :</p><input type="text" name="attr_arme_cat" placeholder=".........." class="sheet-w300">
+        <p class="sheet-w70">Spéciale :</p><input type="text" name="attr_arme_spe" placeholder=".........." class="sheet-w300"><br><br>
+    </fieldset><br><br>
+    
+    <p class="sheet-titre3">Armures</p>
+    
+    <fieldset class="repeating_armures">
+        <input type="text" name="attr_armure_nom" placeholder=".........." class="sheet-w600 sheet-s18"><br>
+        
+        <p class="sheet-w100">Tranchant :</p><input type="number" name="attr_armure_tra" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Contondant :</p><input type="number" name="attr_armure_con" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Perforant :</p><input type="number" name="attr_armure_per" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Localisation :</p><input type="text" name="attr_armure_loc" placeholder=".........." class="sheet-w150"><br>
+        
+        <p class="sheet-w100">Chaleur :</p><input type="number" name="attr_armure_cha" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Électricité :</p><input type="number" name="attr_armure_ele" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Froid :</p><input type="number" name="attr_armure_fro" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Énergie :</p><input type="number" name="attr_armure_ene" value="0" class="sheet-w50 sheet-number1"><br>
+        
+        <p class="sheet-w100">Port requis :</p><input type="number" name="attr_armure_por" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Malus inhérent :</p><input type="number" name="attr_armure_mal" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Solidité :</p><input type="number" name="attr_armure_sol" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Présence :</p><input type="number" name="attr_armure_pre" value="0" class="sheet-w50 sheet-number1"><br>
+        
+        <p class="sheet-w260">Restriction mouvement :</p> <input type="number" name="attr_armure_res" value="0" class="sheet-w50 sheet-number1">
+        <p class="sheet-w100">Catégorie :</p><input type="text" name="attr_armure_cat" placeholder=".........." class="sheet-w300"><br><br>
+    </fieldset><br><br>
+    
+    <p class="sheet-titre3">Équipements</p>
+    <p class="sheet-w30">PO :</p><input type="number" name="attr_po" value="0" class="sheet-w50 sheet-number1">
+    <p class="sheet-w30">PA :</p><input type="number" name="attr_pa" value="0" class="sheet-w50 sheet-number1">
+    <p class="sheet-w30">PC :</p><input type="number" name="attr_pc" value="0" class="sheet-w50 sheet-number1"><br><br>
+    
+    <p class="sheet-w190 sheet-p_2">Nom</p>
+    <p class="sheet-w50 sheet-p_2">Coût</p>
+    <p class="sheet-w50 sheet-p_2">Nombre</p>
+    <p class="sheet-w450 sheet-p_2">Description</p>
+    
+    <fieldset class="repeating_equipement">
+        <input type="text" name="attr_equipement_nom" placeholder=".........." class="sheet-w200">
+        <input type="number" name="attr_equipement_cou" value="0" class="sheet-w50 sheet-number1">
+        <input type="number" name="attr_equipement_nbr" value="0" class="sheet-w50 sheet-number1">
+        <input type="text" name="attr_equipement_des" placeholder=".........." class="sheet-w450"><br>
+    </fieldset>
+</div>
+<!----------------------------------------------------------------------------->
+
+
+
+<!-- KI ----------------------------------------------------------------------->
+
+<div class="sheet-div1 sheet-ki">
+    <p class="sheet-titre1">Ki</p>
+    <p class="sheet-titre2">"Elle est incroyable, cette force que l'âme peut insufler au corps." - W. von Humboldtv</p>
+    
+    <p class="sheet-w150">Connaissance martiale :</p>
+    <input type="text" name="attr_ki_recuperation" class="sheet-w400" placeholder=".........."><br>
+    
+    <p class="sheet-w150">Récupération du Ki :</p>
+    <input type="text" name="attr_ki_recuperation" class="sheet-w400" placeholder=".........."><br><br>
+    
+    
+    <p class="sheet-w160 sheet-p_2"></p>
+    <p class="sheet-w50 sheet-p_2">Actuel</p>
+    <p class="sheet-w50 sheet-p_2">Total</p><br>
+    
+    <p class="sheet-w170">Développement intérieur :</p>
+    <input type="number" name="attr_di_actuel" value="0" class="sheet-w50 sheet-number1">
+    <input type="number" name="attr_di_max" value="0" class="sheet-w50 sheet-number1"><br><br>
+    
+
+    
+    
+    <p class="sheet-w40 sheet-p_2">Total</p>
+    <p class="sheet-w40 sheet-p_2">Demi</p>
+    <p class="sheet-w90 sheet-p_2"></p>
+    <p class="sheet-w100 sheet-p_2">Accumulation</p>
+    <p class="sheet-w100 sheet-p_2">Base</p>
+    <p class="sheet-w100 sheet-p_2">Max</p>
+    <p class="sheet-w100 sheet-p_2">Actuel</p>
+    <p class="sheet-w50 sheet-p_2">Reset</p><br>
+    
+    <input type="checkbox" name="attr_agi_100" value="0" class="sheet-w50">
+    <input type="checkbox" name="attr_agi_50" value="0" class="sheet-w50">
+    <p class="sheet-w100">Agilité :</p>
+    <input type="number" name="attr_agi_acc" value="0" class="sheet-w100 sheet-number1" disabled>
+    <input type="number" name="attr_agi_bas" value="0" class="sheet-w100 sheet-number1">
+    <input type="number" name="attr_agi_max" value="0" class="sheet-w100 sheet-number1" disabled>
+    <input type="number" name="attr_agi_act" value="0" class="sheet-w100 sheet-number1">
+    <input type="checkbox" name="attr_agi_reset" value="0" class="sheet-w50"><br>
+    
+    <input type="checkbox" name="attr_con_100" value="0" class="sheet-w50">
+    <input type="checkbox" name="attr_con_50" value="0" class="sheet-w50">
+    <p class="sheet-w100">Constitution :</p>
+    <input type="number" name="attr_con_acc" value="0" class="sheet-w100 sheet-number1" disabled>
+    <input type="number" name="attr_con_bas" value="0" class="sheet-w100 sheet-number1">
+    <input type="number" name="attr_con_max" value="0" class="sheet-w100 sheet-number1" disabled>
+    <input type="number" name="attr_con_act" value="0" class="sheet-w100 sheet-number1">
+    <input type="checkbox" name="attr_con_reset" value="0" class="sheet-w50"><br>
+    
+    <input type="checkbox" name="attr_dex_100" value="0" class="sheet-w50">
+    <input type="checkbox" name="attr_dex_50" value="0" class="sheet-w50">
+    <p class="sheet-w100">Dextérité :</p>
+    <input type="number" name="attr_dex_acc" value="0" class="sheet-w100 sheet-number1" disabled>
+    <input type="number" name="attr_dex_bas" value="0" class="sheet-w100 sheet-number1">
+    <input type="number" name="attr_dex_max" value="0" class="sheet-w100 sheet-number1" disabled>
+    <input type="number" name="attr_dex_act" value="0" class="sheet-w100 sheet-number1">
+    <input type="checkbox" name="attr_dex_reset" value="0" class="sheet-w50"><br>
+    
+    <input type="checkbox" name="attr_for_100" value="0" class="sheet-w50">
+    <input type="checkbox" name="attr_for_50" value="0" class="sheet-w50">
+    <p class="sheet-w100">Force :</p>
+    <input type="number" name="attr_for_acc" value="0" class="sheet-w100 sheet-number1" disabled>
+    <input type="number" name="attr_for_bas" value="0" class="sheet-w100 sheet-number1">
+    <input type="number" name="attr_for_max" value="0" class="sheet-w100 sheet-number1" disabled>
+    <input type="number" name="attr_for_act" value="0" class="sheet-w100 sheet-number1">
+    <input type="checkbox" name="attr_for_reset" value="0" class="sheet-w50"><br>
+    
+    <input type="checkbox" name="attr_pou_100" value="0" class="sheet-w50">
+    <input type="checkbox" name="attr_pou_50" value="0" class="sheet-w50">
+    <p class="sheet-w100">Pouvoir :</p>
+    <input type="number" name="attr_pou_acc" value="0" class="sheet-w100 sheet-number1" disabled>
+    <input type="number" name="attr_pou_bas" value="0" class="sheet-w100 sheet-number1">
+    <input type="number" name="attr_pou_max" value="0" class="sheet-w100 sheet-number1" disabled>
+    <input type="number" name="attr_pou_act" value="0" class="sheet-w100 sheet-number1">
+    <input type="checkbox" name="attr_pou_reset" value="0" class="sheet-w50"><br>
+    
+    <input type="checkbox" name="attr_vol_100" value="0" class="sheet-w50">
+    <input type="checkbox" name="attr_vol_50" value="0" class="sheet-w50">
+    <p class="sheet-w100">Volonté :</p>
+    <input type="number" name="attr_vol_acc" value="0" class="sheet-w100 sheet-number1" disabled>
+    <input type="number" name="attr_vol_bas" value="0" class="sheet-w100 sheet-number1">
+    <input type="number" name="attr_vol_max" value="0" class="sheet-w100 sheet-number1" disabled>
+    <input type="number" name="attr_vol_act" value="0" class="sheet-w100 sheet-number1">
+    <input type="checkbox" name="attr_vol_reset" value="0" class="sheet-w50"><br>
+    
+    <input type="checkbox" name="attr_tot_100" value="0" class="sheet-w50">
+    <input type="checkbox" name="attr_tot_50" value="0" class="sheet-w50">
+    <p class="sheet-w100">Total :</p>
+    <p class="sheet-w100 sheet-p_2">-</p>
+    <input type="number" name="attr_tot_bas" value="0" class="sheet-w100 sheet-number1">
+    <input type="number" name="attr_tot_max" value="0" class="sheet-w100 sheet-number1" disabled>
+    <input type="number" name="attr_tot_act" value="0" class="sheet-w100 sheet-number1">
+    <input type="checkbox" name="attr_tot_reset" value="0" class="sheet-w50"><br><br>
+    
+    <p class="sheet-titre3">Pouvoir du Ki / Némésis</p>
+    
+    <div class="sheet-w400">
+        <input type="checkbox" name="attr_tech_ki1" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Utilisation du Ki</p><p>(40)</p><br>
+        <input type="checkbox" name="attr_tech_ki2" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Contrôle du Ki</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_ki3" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Détection du Ki</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki4" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Appréciation du Ki</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki5" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Annulation du poids</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki6" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Lévitation</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki7" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Déplacement des objets</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki8" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Vol</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki9" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Extrusion du Ki</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki10" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Armure d'énergie</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki11" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Extension de l'aura de l'arme</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki12" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Destruction du Ki</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki13" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Transmission du Ki</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki14" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Guérison par le Ki</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki15" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Utilisation de l'énergie nécessaire</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki16" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Dissimulation du Ki</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki17" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Fausse mort</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki18" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Élimination des besoins</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki19" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Élimination des malus</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki20" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Récupération</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki21" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Agumentation des caractéristiques</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki22" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Surhumanité</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_ki23" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Zen</p><p>(50)</p><br>
+        <input type="checkbox" name="attr_tech_ki24" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Déplacement des masses</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki25" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Armure d'énergie majeur</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki26" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Armure d'énergie arcane</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki27" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Attaque élémentaire</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki28" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Dégâts accrus</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki29" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Portée accrue</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki30" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Vitesse accrue</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki31" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Absorption d'énergie</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_ki32" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Bouclier physique</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki33" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Guérison supéieure</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki34" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Stabilisation</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki35" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Sacrifice vitale</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki36" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Aura de dissimulation</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki37" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Immunité élémentaire: Feu</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki38" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Immunité élémentaire: Froid</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki39" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Immunité élémentaire: Électricité</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki40" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Récupération d'autrui</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki41" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Accroiseement supérieur</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki42" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Techniques de combat improvisées</p><p>(50)</p><br>
+        <input type="checkbox" name="attr_tech_ki43" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Forcer techniques</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki44" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Aura de combat</p><p>(40)</p><br>
+        <input type="checkbox" name="attr_tech_ki45" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Maîtrise physique</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_ki46" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Changement physique</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_ki47" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Changement supérieur</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki48" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Multiplication des corps</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_ki49" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Multiplication des corps majeure</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_ki50" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Multiplication des corps arcane</p><p>(40)</p><br>
+        <input type="checkbox" name="attr_tech_ki51" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Magnitude</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_ki52" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Magnitude arcane</p><p>(40)</p><br>
+        <input type="checkbox" name="attr_tech_ki53" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Contrôle de l'âge</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_ki54" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Imitation de techniques</p><p>(50)</p><br>
+    </div>
+    
+    
+
+    <div class="sheet-w400">
+        <input type="checkbox" name="attr_tech_nemesis1" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Utilisation du Némésis</p><p>(70)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis2" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Armure de vide</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis3" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Noht</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis4" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Annulation du Ki</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis5" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Annulation majeur du Ki</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis6" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Annulation de la magie</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis7" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Annulation majeur de la magie</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis8" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Annulation des matrices</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis9" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Annulation majeur des matrices</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis10" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Annulation des liens</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis11" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Extrusion de vide</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis12" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Corps de vide</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis13" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Sans besoin</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis14" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Mouvement de vide</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis15" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Forme de vide</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis16" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Essence de vide</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis17" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Un avec le néant</p><p>(40)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis18" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Aura de vide</p><p>(30)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis19" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Non-Détection</p><p>(10)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis20" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Surhumanité (Némésis)</p><p>(20)</p><br>
+        <input type="checkbox" name="attr_tech_nemesis21" class="sheet-mr10 sheet-tech_ki"><p class="sheet-w250">Zen (Némésis)</p><p>(40)</p><br>
+    </div><br><br>
+    
+    
+    <p class="sheet-titre3">Technique du Ki</p>
+    
+    <fieldset class="repeating_techniqueP">
+        <div class="sheet-f1">
+            <input type="text" name="attr_techp_nom" placeholder=".........." class="sheet-s18 sheet-w700"><br>
+            
+            <p class="sheet-w70">Niveau :</p><input type="number" name="attr_techp_niv" class="sheet-w50 sheet-number1" value="0">
+            <p class="sheet-w50">DI :</p><input type="number" name="attr_techp_di" class="sheet-w50 sheet-number1" value="0">
+            <p class="sheet-w90">Maintien :</p><input type="number" name="attr_techp_maintien" class="sheet-w50 sheet-number1" value="0">
+            <p class="sheet-w90">Combinable :</p><input type="checkbox" name="attr_techp_combinable" class="sheet-w150"><br>
+            
+            <p class="sheet-w90">Fréquence :</p><input type="text" name="attr_techp_frequence" class="sheet-w150" placeholder="..........">
+            <p class="sheet-w90">Action liée :</p><input type="text" name="attr_techp_action_liee" class="sheet-w150" placeholder=".........."><br>
+            
+            <p class="sheet-w90">Apprise :</p><input type="checkbox" name="attr_techp_apprise" class="sheet-w150">
+            <p class="sheet-w150">Modifier description :</p><input type="checkbox" name="attr_techp_check" class="sheet-w150"><br><br>
+            
+            <p class="sheet-w200">Caractéritistique optimale :</p><input type="text" name="attr_techp_carac1" class="sheet-w500" placeholder=".........."><br>
+            <p class="sheet-w200">Caractéritistiques optionelles :</p><input type="text" name="attr_techp_carac2" class="sheet-w500" placeholder=".........."><br><br>
+            
+            <p class="sheet-w110 sheet-p_2"></p>
+            <p class="sheet-w50 sheet-p_2">Ki</p>
+            <p class="sheet-w50 sheet-p_2">DI</p>
+            <p class="sheet-w100 sheet-p_2">Effet</p><br>
+            
+            <p class="sheet-w120">Agilité</p>
+            <input type="number" name="attr_techp_agi_ki" class="sheet-w50 sheet-number1" value="0">
+            <input type="number" name="attr_techp_agi_di" class="sheet-w50 sheet-number1" value="0">
+            <input type="text" name="attr_agi_effet" placeholder=".........." class="sheet-w500"><br>
+            
+            <p class="sheet-w120">Constitution</p>
+            <input type="number" name="attr_techp_con_ki" class="sheet-w50 sheet-number1" value="0">
+            <input type="number" name="attr_techp_con_di" class="sheet-w50 sheet-number1" value="0">
+            <input type="text" name="attr_con_effet" placeholder=".........." class="sheet-w500"><br>
+            
+            <p class="sheet-w120">Dextérité</p>
+            <input type="number" name="attr_techp_dex_ki" class="sheet-w50 sheet-number1" value="0">
+            <input type="number" name="attr_techp_dex_di" class="sheet-w50 sheet-number1" value="0">
+            <input type="text" name="attr_dex_effet" placeholder=".........." class="sheet-w500"><br>
+            
+            <p class="sheet-w120">Force</p>
+            <input type="number" name="attr_techp_for_ki" class="sheet-w50 sheet-number1" value="0">
+            <input type="number" name="attr_techp_for_di" class="sheet-w50 sheet-number1" value="0">
+            <input type="text" name="attr_for_effet" placeholder=".........." class="sheet-w500"><br>
+            
+            <p class="sheet-w120">Pouvoir</p>
+            <input type="number" name="attr_techp_pou_ki" class="sheet-w50 sheet-number1" value="0">
+            <input type="number" name="attr_techp_pou_di" class="sheet-w50 sheet-number1" value="0">
+            <input type="text" name="attr_pou_effet" placeholder=".........." class="sheet-w500"><br>
+            
+            <p class="sheet-w120">Volonté</p>
+            <input type="number" name="attr_techp_vol_ki" class="sheet-w50 sheet-number1" value="0">
+            <input type="number" name="attr_techp_vol_di" class="sheet-w50 sheet-number1" value="0">
+            <input type="text" name="attr_vol_effet" placeholder=".........." class="sheet-w500"><br>
+            
+            <textarea name="attr_techp_description" placeholder=".........."></textarea>
+            <span name="attr_techp_description">qsdqssdsdqsd</span>
+        </div>
+    </fieldset>
+    
+
+</div>
+<!----------------------------------------------------------------------------->
