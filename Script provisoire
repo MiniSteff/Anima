@@ -4,7 +4,7 @@ if(msg.type == "api" && msg.content.indexOf("!anima") !== -1) {
     var attaque     = Number(text[1]);                                          /* On récupère l'attaque */
     var defense     = Number(text[2]);                                          /* On récupère la défense */
     var dommage     = Number(text[3]);                                          /* On récupère les dommage */
-    var ip          = Number(text[4]+2)*10;                                     /* On récupère la valeur de l'IP */                                        
+    var ip          = Number((Number((text[4]))*10)+20);                        /* On récupère la valeur de l'IP */                                        
     var ip2         = Number(text[4])*10;                                       /* On récupère la valeur de l'IP de l'équipement */ 
     
     /* On calcule la marge entre l'attaque et la défense */
@@ -14,19 +14,19 @@ if(msg.type == "api" && msg.content.indexOf("!anima") !== -1) {
     var marge2  = marge-ip;
     
     /* On prépare le message */
-    var message1 = "/w gm <br>• Marge brute : "+marge+"<br> • Réduction IP : "+ip2+"<br>** • Marge : "+marge2+"**<br>";
+    var message1 = "/w gm <br>• Marge brute : "+marge+"<br> • Réduction IP : "+ip;
 
     
     if(marge2 < 0){ 
-        var bonus       = (marge2/2)*-1;
-        var message3    = " • **Bonus contre-attaque : "+bonus+"**";
+        var bonus       = (marge/2)*-1;
+        var message3    = "<br> • Marge : "+marge2+"<br>"+" **• Bonus contre-attaque : "+bonus+"**";
 
         sendChat(msg.who, message1+message3);}
     
     if(marge2 >= 0){ 
         var pourcentage = marge2/100;
         var degat       = dommage*pourcentage;
-        var message2    = " • Dégâts de base : "+dommage+""+" <br>**• Dégâts : "+degat+"**";
+        var message2    = "<br> • Dégâts de base : "+dommage+" <br>**• Dégâts : "+degat+"**";
         
         sendChat(msg.who, message1+message2);}
 
